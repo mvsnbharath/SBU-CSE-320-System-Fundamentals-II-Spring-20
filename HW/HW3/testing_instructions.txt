@@ -1,0 +1,15 @@
+To test your assignment:
+
+The grading test cases have been added to the hw3 basecode repo, for you to run on your own.  We suggest that you use the following procedure to test your code.  The reasons for using this procedure are that it is how we test your code and that it will not affect the state of your repository.
+
+ 
+
+Copy the tests directory and all its contents from the basecode to your hw3 directory.  Note that this will replace any tests/sfmm_tests.c file you might have.
+
+Replace any .h or .c files that were marked DO NOT MODIFY by the versions from the basecode.
+
+Replace the lib/sfutil.o object file by the version from the basecode.
+
+Replace the Makefile by the version from the basecode.
+
+Do "make all" to compile your code.   Then run the tests by doing "bin/sfmm_tests".

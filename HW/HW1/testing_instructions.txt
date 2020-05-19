@@ -1,0 +1,14 @@
+To test your assignment:
+
+The grading test cases have been added to the hw1 basecode repo, for you to run on your own.  We suggest that you use the following procedure to test your code.  The reasons for using this procedure are that it is how we test your code and that it will not affect the state of your repository.
+
+Copy the tests directory and all its contents from the basecode to your hw1 directory.
+
+Copy the student_output directory and all its contents from the basecode to your hw1 directory.
+
+Replace the tests/hw1_tests.c in your hw1 by the version from the basecode.
+Replace any .h or .c files that were marked DO NOT MODIFY by the versions from the basecode.
+
+Replace src/sequitur.c by the version from the basecode (note that this version is slightly different than the one originally handed out).
+
+Now do "make all" to compile the code.  Then run the tests by doing "bin/sequitur_tests".

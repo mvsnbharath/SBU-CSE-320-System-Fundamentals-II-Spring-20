@@ -1,0 +1,24 @@
+To test your assignment:
+
+The grading test cases have been added to the hw5 basecode repo, for you to run on your own.  We suggest that you use the following procedure to test your code.  The reasons for using this procedure are that it is how we test your code and that it will not affect the state of your repository.
+
+Copy the tests directory and all its contents from the basecode to your hw5 directory.
+
+Replace any .h or .c files that were marked DO NOT MODIFY by the versions from the basecode (be sure to replace server.h).
+Replace the util/tester.c and util/tester files by the versions from the basecode.
+
+Replace the lib/pbx.a library file by the version from the basecode.
+
+Replace the Makefile by the version from the basecode.
+
+For configuration (A), remove src/server.c and src/pbx.c.  Edit the Makefile, find the line that says
+CFLAGS += $(STD) -DTEST_CONFIG_C
+and replace TEST_CONFIG_C by TEST_CONFIG_A.  Compile using "make clean all", and run the tests by doing bin/pbx_tests.
+
+For configuration (B), restore your src/server.c, leaving src/pbx.c removed. Edit the Makefile and set the configuration to TEST_CONFIG_B.  Compile using "make clean all", and run the tests by doing bin/pbx_tests.
+
+For configuration (C), restore your src/server.c and src/pbx.c.  Edit the Makefile and set the configuration to TEST_CONFIG_C.  Compile using "make clean all", and run the tests by doing bin/pbx_tests.
+
+For configuration (D), use the same source files as for configuration (C), but use configuration TEST_CONFIG_D.  Once again, compile using "make clean all" and run by doing bin/pbx_tests.
+
+Note that the tests have various timeouts in them, which could render the results different (probably worse) on a slower system.  You have to inspect the test output to determine the reasons for test failures.

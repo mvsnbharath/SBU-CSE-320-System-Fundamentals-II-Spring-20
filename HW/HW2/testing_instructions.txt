@@ -1,0 +1,25 @@
+To test your assignment:
+
+The grading test cases have been added to the hw2 basecode repo, for you to run on your own.  We suggest that you use the following procedure to test your code.  The reasons for using this procedure are that it is how we test your code and that it will not affect the state of your repository.
+
+Copy the tests directory and all its contents from the basecode to your hw2 directory.
+
+Replace any .h or .c files that were marked DO NOT MODIFY by the versions from the basecode.
+
+Replace the Makefile by the version from the basecode.
+
+Copy the Makefile.aux from the basecode to your hw2 directory.
+
+For the first run:
+
+Copy tests/refbin/vtree_normal to tests/refbin/vtree  Make sure execute permission is set on this binary.
+
+Do "make all" to compile your code.   Then run the tests by doing "bin/vtree_tests".
+
+For the second run:
+
+Copy tests/refbin/vtree_aux to tests/refbin/vtree  Once again, make sure execute permission is set.
+
+Do "make -f Makefile.aux clean all" to compile your code.  Then run the tests by doing "bin/vtree_tests".
+
+To avoid issues such as those that occurred with the originally handed-out basecode tests, the grading tests compare the output of your program with that of a reference binary (in tests/refbin/vtree).  This should eliminate directory order and file size discrepancies.

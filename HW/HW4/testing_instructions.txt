@@ -1,0 +1,21 @@
+To test your assignment:
+
+The grading test cases have been added to the hw4 basecode repo, for you to run on your own.  We suggest that you use the following procedure to test your code.  The reasons for using this procedure are that it is how we test your code and that it will not affect the state of your repository.
+
+
+
+
+Copy the tests directory and all its contents from the basecode to your hw4 directory.  Note that this will replace the original tests/hw4_tests.c file with an empty file.
+
+Replace any .h or .c files that were marked DO NOT MODIFY by the versions from the basecode.
+Copy any other files now in the basecode directory that were not originally to the corresponding places in your working area.
+
+Replace the lib/sf_event.o object file by the version from the basecode.
+
+Replace the Makefile by the version from the basecode.
+
+For configuration (A), remove tests/worker_tests.c, compile using "make clean all", and run the tests by doing "demo/polya_tests".
+
+For configuration (B), compile as for configuration (A), but run the tests by doing "bin/polya_tests".
+
+For configuration (C), remove tests/tracker_tests.c and restore tests/worker_tests.c.  Do "make clean all" to compile yor code and then run the tests by doing "bin/polya_tests".
