@@ -1,0 +1,5 @@
+Graded Commit:b94164817eac7ec66e8abe38b4eea31123983714
+
+TEST NAME, POINTS,OUT OF
+stress_suite/stress_test,0,1,1 assertion(s) failed.: tests/stress_tests.c:140: Tester pid 30727 exit status was not 0
+total,0,1

@@ -1,0 +1,557 @@
+[----] Criterion v2.3.2
+[====] Running 8 tests from main_suite:
+[RUN ] main_suite::connect_disconnect2_test
+***Starting server...pid = 6340
+Waiting for server to start (i = 0)
+tcp        0      0 0.0.0.0:10000           0.0.0.0:*               LISTEN     
+Running test main_suite/connect_disconnect2_test
+1589733690.477780: [0] (step #0) TU_CONNECT_CMD
+1589733690.478838: [0] Read responses until ON HOOK
+1589733690.478872: [0] Expecting: { ON HOOK RINGING* }
+1589733690.479440: [0] Message from server: ON HOOK 5
+1589733690.479483: [0] Change state: ON HOOK -> ON HOOK
+1589733690.479501: [1] (step #1) TU_CONNECT_CMD
+1589733690.479961: [1] Read responses until ON HOOK
+1589733690.480009: [1] Expecting: { ON HOOK RINGING* }
+1589733690.480348: [1] Message from server: ON HOOK 6
+1589733690.480383: [1] Change state: ON HOOK -> ON HOOK
+1589733690.480401: [0] (step #2) TU_DISCONNECT_CMD
+1589733690.480463: [0] Disconnected, now expecting EOF
+1589733690.480478: [0] Read responses until EOF
+1589733690.480496: [0] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733690.480719: [0] EOF reading message from server
+1589733690.480810: [0] Matched EOF after disconnect
+1589733690.480838: [1] (step #3) TU_DISCONNECT_CMD
+1589733690.480928: [1] Disconnected, now expecting EOF
+1589733690.480949: [1] Read responses until EOF
+1589733690.480969: [1] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733690.481084: [1] EOF reading message from server
+1589733690.481118: [1] Matched EOF after disconnect
+***Sending SIGHUP to server pid 6340
+***Server wait() returned = 0x0
+[PASS] main_suite::connect_disconnect2_test: (1.01s)
+1589733690.478815: [0] Connected to server localhost:35482
+1589733690.479813: [1] Connected to server localhost:35994
+[RUN ] main_suite::connect_disconnect2_valgrind_test
+***Starting server...pid = 6357
+Waiting for server to start (i = 0)
+tcp        0      0 0.0.0.0:10000           0.0.0.0:*               LISTEN     
+Running test main_suite/connect_disconnect2_valgrind_test
+1589733692.536724: [0] (step #0) TU_CONNECT_CMD
+1589733692.537796: [0] Read responses until ON HOOK
+1589733692.537876: [0] Expecting: { ON HOOK RINGING* }
+1589733692.538413: [0] Message from server: ON HOOK 5
+1589733692.538457: [0] Change state: ON HOOK -> ON HOOK
+1589733692.538475: [1] (step #1) TU_CONNECT_CMD
+1589733692.538800: [1] Read responses until ON HOOK
+1589733692.538852: [1] Expecting: { ON HOOK RINGING* }
+1589733692.539331: [1] Message from server: ON HOOK 6
+1589733692.539375: [1] Change state: ON HOOK -> ON HOOK
+1589733692.539393: [0] (step #2) TU_DISCONNECT_CMD
+1589733692.539457: [0] Disconnected, now expecting EOF
+1589733692.539473: [0] Read responses until EOF
+1589733692.539492: [0] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733692.539688: [0] EOF reading message from server
+1589733692.539752: [0] Matched EOF after disconnect
+1589733692.539773: [1] (step #3) TU_DISCONNECT_CMD
+1589733692.539981: [1] Disconnected, now expecting EOF
+1589733692.540003: [1] Read responses until EOF
+1589733692.540021: [1] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733692.540040: [1] EOF reading message from server
+1589733692.540068: [1] Matched EOF after disconnect
+***Sending SIGHUP to server pid 6357
+***Server wait() returned = 0x0
+[PASS] main_suite::connect_disconnect2_valgrind_test: (1.00s)
+1589733692.537771: [0] Connected to server localhost:36506
+1589733692.538784: [1] Connected to server localhost:37018
+[RUN ] main_suite::connect_disconnect_many_test
+***Starting server...pid = 6374
+Waiting for server to start (i = 0)
+tcp        0      0 0.0.0.0:10000           0.0.0.0:*               LISTEN     
+Running test main_suite/connect_disconnect_many_test
+1589733694.594386: [0] (step #0) TU_CONNECT_CMD
+1589733694.595461: [0] Read responses until ON HOOK
+1589733694.595549: [0] Expecting: { ON HOOK RINGING* }
+1589733694.596196: [0] Message from server: ON HOOK 5
+1589733694.596271: [0] Change state: ON HOOK -> ON HOOK
+1589733694.596298: [1] (step #1) TU_CONNECT_CMD
+1589733694.596624: [1] Read responses until ON HOOK
+1589733694.596672: [1] Expecting: { ON HOOK RINGING* }
+1589733694.597168: [1] Message from server: ON HOOK 6
+1589733694.597209: [1] Change state: ON HOOK -> ON HOOK
+1589733694.597229: [2] (step #2) TU_CONNECT_CMD
+1589733694.597563: [2] Read responses until ON HOOK
+1589733694.597616: [2] Expecting: { ON HOOK RINGING* }
+1589733694.597916: [2] Message from server: ON HOOK 7
+1589733694.597946: [2] Change state: ON HOOK -> ON HOOK
+1589733694.597961: [3] (step #3) TU_CONNECT_CMD
+1589733694.598236: [3] Read responses until ON HOOK
+1589733694.598287: [3] Expecting: { ON HOOK RINGING* }
+1589733694.598596: [3] Message from server: ON HOOK 8
+1589733694.598627: [3] Change state: ON HOOK -> ON HOOK
+1589733694.598642: [4] (step #4) TU_CONNECT_CMD
+1589733694.598925: [4] Read responses until ON HOOK
+1589733694.598976: [4] Expecting: { ON HOOK RINGING* }
+1589733694.599471: [4] Message from server: ON HOOK 9
+1589733694.599523: [4] Change state: ON HOOK -> ON HOOK
+1589733694.599542: [5] (step #5) TU_CONNECT_CMD
+1589733694.600003: [5] Read responses until ON HOOK
+1589733694.600065: [5] Expecting: { ON HOOK RINGING* }
+1589733694.600432: [5] Message from server: ON HOOK 10
+1589733694.600464: [5] Change state: ON HOOK -> ON HOOK
+1589733694.600479: [6] (step #6) TU_CONNECT_CMD
+1589733694.600775: [6] Read responses until ON HOOK
+1589733694.600828: [6] Expecting: { ON HOOK RINGING* }
+1589733694.601115: [6] Message from server: ON HOOK 12
+1589733694.601147: [6] Change state: ON HOOK -> ON HOOK
+1589733694.601162: [7] (step #7) TU_CONNECT_CMD
+1589733694.601424: [7] Read responses until ON HOOK
+1589733694.601476: [7] Expecting: { ON HOOK RINGING* }
+1589733694.601760: [7] Message from server: ON HOOK 14
+1589733694.601788: [7] Change state: ON HOOK -> ON HOOK
+1589733694.601801: [8] (step #8) TU_CONNECT_CMD
+1589733694.602068: [8] Read responses until ON HOOK
+1589733694.602120: [8] Expecting: { ON HOOK RINGING* }
+1589733694.602468: [8] Message from server: ON HOOK 15
+1589733694.602502: [8] Change state: ON HOOK -> ON HOOK
+1589733694.602517: [9] (step #9) TU_CONNECT_CMD
+1589733694.602780: [9] Read responses until ON HOOK
+1589733694.602830: [9] Expecting: { ON HOOK RINGING* }
+1589733694.603317: [9] Message from server: ON HOOK 16
+1589733694.603368: [9] Change state: ON HOOK -> ON HOOK
+1589733694.603389: [0] (step #10) TU_DISCONNECT_CMD
+1589733694.603482: [0] Disconnected, now expecting EOF
+1589733694.603498: [0] Read responses until EOF
+1589733694.603518: [0] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733694.603671: [0] EOF reading message from server
+1589733694.603724: [0] Matched EOF after disconnect
+1589733694.603741: [1] (step #11) TU_DISCONNECT_CMD
+1589733694.603792: [1] Disconnected, now expecting EOF
+1589733694.603809: [1] Read responses until EOF
+1589733694.603939: [1] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733694.603982: [1] EOF reading message from server
+1589733694.604008: [1] Matched EOF after disconnect
+1589733694.604031: [2] (step #12) TU_DISCONNECT_CMD
+1589733694.604274: [2] Disconnected, now expecting EOF
+1589733694.604290: [2] Read responses until EOF
+1589733694.604303: [2] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733694.604313: [2] EOF reading message from server
+1589733694.604330: [2] Matched EOF after disconnect
+1589733694.604338: [3] (step #13) TU_DISCONNECT_CMD
+1589733694.604375: [3] Disconnected, now expecting EOF
+1589733694.604387: [3] Read responses until EOF
+1589733694.604399: [3] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733694.604504: [3] EOF reading message from server
+1589733694.604530: [3] Matched EOF after disconnect
+1589733694.604536: [4] (step #14) TU_DISCONNECT_CMD
+1589733694.604566: [4] Disconnected, now expecting EOF
+1589733694.604574: [4] Read responses until EOF
+1589733694.604581: [4] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733694.604959: [4] EOF reading message from server
+1589733694.604989: [4] Matched EOF after disconnect
+1589733694.604997: [5] (step #15) TU_DISCONNECT_CMD
+1589733694.605183: [5] Disconnected, now expecting EOF
+1589733694.605208: [5] Read responses until EOF
+1589733694.605222: [5] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733694.605230: [5] EOF reading message from server
+1589733694.605240: [5] Matched EOF after disconnect
+1589733694.605245: [6] (step #16) TU_DISCONNECT_CMD
+1589733694.605270: [6] Disconnected, now expecting EOF
+1589733694.605275: [6] Read responses until EOF
+1589733694.605281: [6] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733694.605391: [6] EOF reading message from server
+1589733694.605405: [6] Matched EOF after disconnect
+1589733694.605411: [7] (step #17) TU_DISCONNECT_CMD
+1589733694.605433: [7] Disconnected, now expecting EOF
+1589733694.605438: [7] Read responses until EOF
+1589733694.605444: [7] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733694.605653: [7] EOF reading message from server
+1589733694.605680: [7] Matched EOF after disconnect
+1589733694.605690: [8] (step #18) TU_DISCONNECT_CMD
+1589733694.605720: [8] Disconnected, now expecting EOF
+1589733694.605728: [8] Read responses until EOF
+1589733694.605736: [8] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733694.605744: [8] EOF reading message from server
+1589733694.605754: [8] Matched EOF after disconnect
+1589733694.605763: [9] (step #19) TU_DISCONNECT_CMD
+1589733694.605783: [9] Disconnected, now expecting EOF
+1589733694.605791: [9] Read responses until EOF
+1589733694.605798: [9] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733694.605875: [9] EOF reading message from server
+1589733694.605898: [9] Matched EOF after disconnect
+***Sending SIGHUP to server pid 6374
+***Server wait() returned = 0x0
+[PASS] main_suite::connect_disconnect_many_test: (1.01s)
+1589733694.595435: [0] Connected to server localhost:37530
+1589733694.596608: [1] Connected to server localhost:38042
+1589733694.597547: [2] Connected to server localhost:38554
+1589733694.598220: [3] Connected to server localhost:39066
+1589733694.598910: [4] Connected to server localhost:39578
+1589733694.599984: [5] Connected to server localhost:40090
+1589733694.600760: [6] Connected to server localhost:40602
+1589733694.601409: [7] Connected to server localhost:41114
+1589733694.602052: [8] Connected to server localhost:41626
+1589733694.602765: [9] Connected to server localhost:42138
+[RUN ] main_suite::connect_disconnect_many_valgrind_test
+***Starting server...pid = 6399
+Waiting for server to start (i = 0)
+tcp        0      0 0.0.0.0:10000           0.0.0.0:*               LISTEN     
+Running test main_suite/connect_disconnect_many_valgrind_test
+1589733696.658074: [0] (step #0) TU_CONNECT_CMD
+1589733696.659151: [0] Read responses until ON HOOK
+1589733696.659215: [0] Expecting: { ON HOOK RINGING* }
+1589733696.659752: [0] Message from server: ON HOOK 5
+1589733696.659795: [0] Change state: ON HOOK -> ON HOOK
+1589733696.659813: [1] (step #1) TU_CONNECT_CMD
+1589733696.660243: [1] Read responses until ON HOOK
+1589733696.660295: [1] Expecting: { ON HOOK RINGING* }
+1589733696.660797: [1] Message from server: ON HOOK 6
+1589733696.660840: [1] Change state: ON HOOK -> ON HOOK
+1589733696.660861: [2] (step #2) TU_CONNECT_CMD
+1589733696.661186: [2] Read responses until ON HOOK
+1589733696.661237: [2] Expecting: { ON HOOK RINGING* }
+1589733696.661538: [2] Message from server: ON HOOK 7
+1589733696.661568: [2] Change state: ON HOOK -> ON HOOK
+1589733696.661582: [3] (step #3) TU_CONNECT_CMD
+1589733696.661850: [3] Read responses until ON HOOK
+1589733696.661902: [3] Expecting: { ON HOOK RINGING* }
+1589733696.662188: [3] Message from server: ON HOOK 8
+1589733696.662221: [3] Change state: ON HOOK -> ON HOOK
+1589733696.662236: [4] (step #4) TU_CONNECT_CMD
+1589733696.662502: [4] Read responses until ON HOOK
+1589733696.662552: [4] Expecting: { ON HOOK RINGING* }
+1589733696.663026: [4] Message from server: ON HOOK 9
+1589733696.663078: [4] Change state: ON HOOK -> ON HOOK
+1589733696.663097: [5] (step #5) TU_CONNECT_CMD
+1589733696.663463: [5] Read responses until ON HOOK
+1589733696.663515: [5] Expecting: { ON HOOK RINGING* }
+1589733696.663895: [5] Message from server: ON HOOK 10
+1589733696.663963: [5] Change state: ON HOOK -> ON HOOK
+1589733696.664001: [6] (step #6) TU_CONNECT_CMD
+1589733696.664309: [6] Read responses until ON HOOK
+1589733696.664366: [6] Expecting: { ON HOOK RINGING* }
+1589733696.664887: [6] Message from server: ON HOOK 12
+1589733696.664940: [6] Change state: ON HOOK -> ON HOOK
+1589733696.664960: [7] (step #7) TU_CONNECT_CMD
+1589733696.665321: [7] Read responses until ON HOOK
+1589733696.665374: [7] Expecting: { ON HOOK RINGING* }
+1589733696.665689: [7] Message from server: ON HOOK 14
+1589733696.665721: [7] Change state: ON HOOK -> ON HOOK
+1589733696.665735: [8] (step #8) TU_CONNECT_CMD
+1589733696.665991: [8] Read responses until ON HOOK
+1589733696.666043: [8] Expecting: { ON HOOK RINGING* }
+1589733696.666655: [8] Message from server: ON HOOK 15
+1589733696.666708: [8] Change state: ON HOOK -> ON HOOK
+1589733696.666727: [9] (step #9) TU_CONNECT_CMD
+1589733696.667101: [9] Read responses until ON HOOK
+1589733696.667155: [9] Expecting: { ON HOOK RINGING* }
+1589733696.667496: [9] Message from server: ON HOOK 16
+1589733696.667525: [9] Change state: ON HOOK -> ON HOOK
+1589733696.667539: [0] (step #10) TU_DISCONNECT_CMD
+1589733696.667599: [0] Disconnected, now expecting EOF
+1589733696.667616: [0] Read responses until EOF
+1589733696.667634: [0] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733696.667809: [0] EOF reading message from server
+1589733696.667963: [0] Matched EOF after disconnect
+1589733696.667984: [1] (step #11) TU_DISCONNECT_CMD
+1589733696.668230: [1] Disconnected, now expecting EOF
+1589733696.668252: [1] Read responses until EOF
+1589733696.668269: [1] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733696.668282: [1] EOF reading message from server
+1589733696.668305: [1] Matched EOF after disconnect
+1589733696.668321: [2] (step #12) TU_DISCONNECT_CMD
+1589733696.668365: [2] Disconnected, now expecting EOF
+1589733696.668404: [2] Read responses until EOF
+1589733696.668441: [2] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733696.668474: [2] EOF reading message from server
+1589733696.668517: [2] Matched EOF after disconnect
+1589733696.668553: [3] (step #13) TU_DISCONNECT_CMD
+1589733696.668588: [3] Disconnected, now expecting EOF
+1589733696.668616: [3] Read responses until EOF
+1589733696.668644: [3] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733696.668670: [3] EOF reading message from server
+1589733696.668718: [3] Matched EOF after disconnect
+1589733696.668728: [4] (step #14) TU_DISCONNECT_CMD
+1589733696.668749: [4] Disconnected, now expecting EOF
+1589733696.668757: [4] Read responses until EOF
+1589733696.668764: [4] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733696.669018: [4] EOF reading message from server
+1589733696.669045: [4] Matched EOF after disconnect
+1589733696.669056: [5] (step #15) TU_DISCONNECT_CMD
+1589733696.669112: [5] Disconnected, now expecting EOF
+1589733696.669122: [5] Read responses until EOF
+1589733696.669131: [5] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733696.669138: [5] EOF reading message from server
+1589733696.669149: [5] Matched EOF after disconnect
+1589733696.669159: [6] (step #16) TU_DISCONNECT_CMD
+1589733696.669182: [6] Disconnected, now expecting EOF
+1589733696.669191: [6] Read responses until EOF
+1589733696.669198: [6] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733696.669351: [6] EOF reading message from server
+1589733696.669377: [6] Matched EOF after disconnect
+1589733696.669387: [7] (step #17) TU_DISCONNECT_CMD
+1589733696.669422: [7] Disconnected, now expecting EOF
+1589733696.669432: [7] Read responses until EOF
+1589733696.669440: [7] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733696.669448: [7] EOF reading message from server
+1589733696.669459: [7] Matched EOF after disconnect
+1589733696.669469: [8] (step #18) TU_DISCONNECT_CMD
+1589733696.669491: [8] Disconnected, now expecting EOF
+1589733696.669499: [8] Read responses until EOF
+1589733696.669506: [8] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733696.669623: [8] EOF reading message from server
+1589733696.669648: [8] Matched EOF after disconnect
+1589733696.669658: [9] (step #19) TU_DISCONNECT_CMD
+1589733696.669686: [9] Disconnected, now expecting EOF
+1589733696.669695: [9] Read responses until EOF
+1589733696.669704: [9] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733696.669711: [9] EOF reading message from server
+1589733696.669722: [9] Matched EOF after disconnect
+***Sending SIGHUP to server pid 6399
+***Server wait() returned = 0x0
+[PASS] main_suite::connect_disconnect_many_valgrind_test: (1.01s)
+1589733696.659128: [0] Connected to server localhost:42650
+1589733696.660226: [1] Connected to server localhost:43162
+1589733696.661171: [2] Connected to server localhost:43674
+1589733696.661835: [3] Connected to server localhost:44186
+1589733696.662487: [4] Connected to server localhost:44698
+1589733696.663445: [5] Connected to server localhost:45210
+1589733696.664293: [6] Connected to server localhost:45722
+1589733696.665304: [7] Connected to server localhost:46234
+1589733696.665976: [8] Connected to server localhost:46746
+1589733696.667084: [9] Connected to server localhost:47258
+[RUN ] main_suite::connect_disconnect_test
+***Starting server...pid = 6424
+Waiting for server to start (i = 0)
+tcp        0      0 0.0.0.0:10000           0.0.0.0:*               LISTEN     
+Running test main_suite/connect_disconnect_test
+1589733698.724253: [0] (step #0) TU_CONNECT_CMD
+1589733698.725321: [0] Read responses until ON HOOK
+1589733698.725391: [0] Expecting: { ON HOOK RINGING* }
+1589733698.725989: [0] Message from server: ON HOOK 5
+1589733698.726032: [0] Change state: ON HOOK -> ON HOOK
+1589733698.726049: [0] (step #1) TU_DISCONNECT_CMD
+1589733698.726111: [0] Disconnected, now expecting EOF
+1589733698.726153: [0] Read responses until EOF
+1589733698.726193: [0] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733698.726228: [0] EOF reading message from server
+1589733698.726277: [0] Matched EOF after disconnect
+***Sending SIGHUP to server pid 6424
+***Server wait() returned = 0x0
+[PASS] main_suite::connect_disconnect_test: (1.00s)
+1589733698.725295: [0] Connected to server localhost:47770
+[RUN ] main_suite::connect_disconnect_valgrind_test
+***Starting server...pid = 6440
+Waiting for server to start (i = 0)
+Waiting for server to start (i = 1)
+Waiting for server to start (i = 2)
+tcp        0      0 0.0.0.0:10000           0.0.0.0:*               LISTEN     
+Running test main_suite/connect_disconnect_valgrind_test
+1589733702.813998: [0] (step #0) TU_CONNECT_CMD
+1589733702.815058: [0] Read responses until ON HOOK
+1589733702.815085: [0] Expecting: { ON HOOK RINGING* }
+1589733702.910363: [0] Message from server: ON HOOK 6
+1589733702.910384: [0] Change state: ON HOOK -> ON HOOK
+1589733702.910394: [0] (step #1) TU_DISCONNECT_CMD
+1589733702.910421: [0] Disconnected, now expecting EOF
+1589733702.910425: [0] Read responses until EOF
+1589733702.910431: [0] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733702.920500: [0] Timeout (0, 10000)
+1589733702.920531: [0] EOF reading message from server
+1589733702.920570: [0] Matched EOF after disconnect
+***Sending SIGHUP to server pid 6440
+***Server wait() returned = 0x0
+[PASS] main_suite::connect_disconnect_valgrind_test: (1.11s)
+1589733702.815033: [0] Connected to server localhost:48282
+[RUN ] main_suite::open_connection_test
+***Starting server...pid = 6465
+Waiting for server to start (i = 0)
+tcp        0      0 0.0.0.0:10000           0.0.0.0:*               LISTEN     
+Running test main_suite/open_connection_test
+1589733704.974554: [0] (step #0) TU_CONNECT_CMD
+1589733704.975627: [0] Read responses until ON HOOK
+1589733704.975690: [0] Expecting: { ON HOOK RINGING* }
+1589733704.976223: [0] Message from server: ON HOOK 5
+1589733704.976269: [0] Change state: ON HOOK -> ON HOOK
+1589733704.976288: [1] (step #1) TU_CONNECT_CMD
+1589733704.976609: [1] Read responses until ON HOOK
+1589733704.976660: [1] Expecting: { ON HOOK RINGING* }
+1589733704.977137: [1] Message from server: ON HOOK 6
+1589733704.977181: [1] Change state: ON HOOK -> ON HOOK
+1589733704.977200: [0] (step #2) TU_DISCONNECT_CMD
+1589733704.977262: [0] Disconnected, now expecting EOF
+1589733704.977277: [0] Read responses until EOF
+1589733704.977295: [0] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733704.977582: [0] EOF reading message from server
+1589733704.977673: [0] Matched EOF after disconnect
+***Sending SIGHUP to server pid 6465
+***Server wait() returned = 0x0
+[PASS] main_suite::open_connection_test: (1.00s)
+1589733704.975602: [0] Connected to server localhost:48794
+1589733704.976594: [1] Connected to server localhost:49306
+[RUN ] main_suite::open_connection_valgrind_test
+***Starting server...pid = 6482
+Waiting for server to start (i = 0)
+Waiting for server to start (i = 1)
+Waiting for server to start (i = 2)
+tcp        0      0 0.0.0.0:10000           0.0.0.0:*               LISTEN     
+Running test main_suite/open_connection_valgrind_test
+1589733709.064234: [0] (step #0) TU_CONNECT_CMD
+1589733709.065301: [0] Read responses until ON HOOK
+1589733709.065340: [0] Expecting: { ON HOOK RINGING* }
+1589733709.161741: [0] Message from server: ON HOOK 6
+1589733709.161781: [0] Change state: ON HOOK -> ON HOOK
+1589733709.161797: [1] (step #1) TU_CONNECT_CMD
+1589733709.162002: [1] Read responses until ON HOOK
+1589733709.162026: [1] Expecting: { ON HOOK RINGING* }
+1589733709.223295: [1] Message from server: ON HOOK 7
+1589733709.223333: [1] Change state: ON HOOK -> ON HOOK
+1589733709.223349: [0] (step #2) TU_DISCONNECT_CMD
+1589733709.223409: [0] Disconnected, now expecting EOF
+1589733709.223421: [0] Read responses until EOF
+1589733709.223435: [0] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733709.228580: [0] EOF reading message from server
+1589733709.228637: [0] Matched EOF after disconnect
+***Sending SIGHUP to server pid 6482
+***Server wait() returned = 0x0
+[PASS] main_suite::open_connection_valgrind_test: (1.17s)
+1589733709.065276: [0] Connected to server localhost:49818
+1589733709.161992: [1] Connected to server localhost:50330
+[====] Running 4 tests from server_suite:
+[RUN ] server_suite::dial_bad_test
+***Starting server...pid = 6508
+Waiting for server to start (i = 0)
+tcp        0      0 0.0.0.0:10000           0.0.0.0:*               LISTEN     
+Running test server_suite/dial_bad_test
+1589733711.285561: [0] (step #0) TU_CONNECT_CMD
+1589733711.286641: [0] Read responses until ON HOOK
+1589733711.286704: [0] Expecting: { ON HOOK RINGING* }
+1589733711.287244: [0] Message from server: ON HOOK 5
+1589733711.287288: [0] Change state: ON HOOK -> ON HOOK
+1589733711.287307: [0] (step #1) pickup
+1589733711.287402: [0] Read responses until DIAL TONE
+1589733711.287455: [0] Expecting: { ON HOOK* RINGING* DIAL TONE }
+1589733711.287593: [0] Message from server: DIAL TONE
+1589733711.287612: [0] Change state: ON HOOK -> DIAL TONE
+1589733711.287622: [0] (step #2) dial extension 0 (id 1)
+1589733711.287681: [0] Read responses until ERROR
+1589733711.287725: [0] Expecting: { DIAL TONE* RING BACK BUSY SIGNAL ERROR }
+1589733711.297991: [0] Timeout (0, 10000)
+1589733711.298085: [0] EOF reading message from server
+1589733711.298102: [0] EOF seen when it shouldn't have been
+[----] tests/grading_tests.c:453: Assertion failed: expected 0, was -1
+[FAIL] server_suite::dial_bad_test: (0.01s)
+1589733711.286617: [0] Connected to server localhost:50842
+[RUN ] server_suite::dial_self_test
+***Starting server...pid = 6524
+Waiting for server to start (i = 0)
+tcp        0      0 0.0.0.0:10000           0.0.0.0:*               LISTEN     
+Running test server_suite/dial_self_test
+1589733712.350079: [0] (step #0) TU_CONNECT_CMD
+1589733712.351142: [0] Read responses until ON HOOK
+1589733712.351207: [0] Expecting: { ON HOOK RINGING* }
+1589733712.351757: [0] Message from server: ON HOOK 5
+1589733712.351800: [0] Change state: ON HOOK -> ON HOOK
+1589733712.351912: [0] (step #1) pickup
+1589733712.352027: [0] Read responses until DIAL TONE
+1589733712.352080: [0] Expecting: { ON HOOK* RINGING* DIAL TONE }
+1589733712.352121: [0] Message from server: DIAL TONE
+1589733712.352150: [0] Change state: ON HOOK -> DIAL TONE
+1589733712.352179: [0] (step #2) dial extension 5 (id 0)
+1589733712.352240: [0] Read responses until BUSY SIGNAL
+1589733712.352258: [0] Expecting: { DIAL TONE* RING BACK BUSY SIGNAL ERROR }
+1589733712.352355: [0] Message from server: BUSY SIGNAL
+1589733712.352382: [0] Change state: DIAL TONE -> BUSY SIGNAL
+1589733712.352394: [0] (step #3) hangup
+1589733712.352455: [0] Read responses until ON HOOK
+1589733712.352507: [0] Expecting: { ON HOOK BUSY SIGNAL* }
+1589733712.352577: [0] Message from server: ON HOOK 5
+1589733712.352599: [0] Change state: BUSY SIGNAL -> ON HOOK
+1589733712.352613: [0] (step #4) TU_DISCONNECT_CMD
+1589733712.352657: [0] Disconnected, now expecting EOF
+1589733712.352673: [0] Read responses until EOF
+1589733712.352690: [0] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733712.352778: [0] EOF reading message from server
+1589733712.352827: [0] Matched EOF after disconnect
+***Sending SIGHUP to server pid 6524
+***Server wait() returned = 0x0
+[PASS] server_suite::dial_self_test: (1.00s)
+1589733712.351118: [0] Connected to server localhost:51354
+[RUN ] server_suite::pickup_hangup2_test
+***Starting server...pid = 6540
+Waiting for server to start (i = 0)
+tcp        0      0 0.0.0.0:10000           0.0.0.0:*               LISTEN     
+Running test server_suite/pickup_hangup2_test
+1589733714.407120: [0] (step #0) TU_CONNECT_CMD
+1589733714.408307: [0] Read responses until ON HOOK
+1589733714.408383: [0] Expecting: { ON HOOK RINGING* }
+1589733714.408905: [0] Message from server: ON HOOK 5
+1589733714.408948: [0] Change state: ON HOOK -> ON HOOK
+1589733714.408967: [1] (step #1) TU_CONNECT_CMD
+1589733714.409288: [1] Read responses until ON HOOK
+1589733714.409340: [1] Expecting: { ON HOOK RINGING* }
+1589733714.409827: [1] Message from server: ON HOOK 6
+1589733714.409871: [1] Change state: ON HOOK -> ON HOOK
+1589733714.409889: [0] (step #2) pickup
+1589733714.409988: [0] Read responses until DIAL TONE
+1589733714.410042: [0] Expecting: { ON HOOK* RINGING* DIAL TONE }
+1589733714.410192: [0] Message from server: DIAL TONE
+1589733714.410212: [0] Change state: ON HOOK -> DIAL TONE
+1589733714.410222: [1] (step #3) pickup
+1589733714.410293: [1] Read responses until DIAL TONE
+1589733714.410338: [1] Expecting: { ON HOOK* RINGING* DIAL TONE }
+1589733714.410434: [1] Message from server: DIAL TONE
+1589733714.410452: [1] Change state: ON HOOK -> DIAL TONE
+1589733714.410462: [0] (step #4) hangup
+1589733714.410510: [0] Read responses until ON HOOK
+1589733714.410550: [0] Expecting: { ON HOOK DIAL TONE* }
+1589733714.410683: [0] Message from server: ON HOOK 5
+1589733714.410713: [0] Change state: DIAL TONE -> ON HOOK
+1589733714.410726: [1] (step #5) hangup
+1589733714.410793: [1] Read responses until ON HOOK
+1589733714.410841: [1] Expecting: { ON HOOK DIAL TONE* }
+1589733714.410866: [1] Message from server: ON HOOK 6
+1589733714.410878: [1] Change state: DIAL TONE -> ON HOOK
+1589733714.410887: [0] (step #6) TU_DISCONNECT_CMD
+1589733714.410941: [0] Disconnected, now expecting EOF
+1589733714.410977: [0] Read responses until EOF
+1589733714.411012: [0] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733714.411044: [0] EOF reading message from server
+1589733714.412256: [0] Matched EOF after disconnect
+***Sending SIGHUP to server pid 6540
+***Server wait() returned = 0x0
+[PASS] server_suite::pickup_hangup2_test: (1.01s)
+1589733714.408280: [0] Connected to server localhost:51866
+1589733714.409273: [1] Connected to server localhost:52378
+[RUN ] server_suite::pickup_hangup_test
+***Starting server...pid = 6557
+Waiting for server to start (i = 0)
+tcp        0      0 0.0.0.0:10000           0.0.0.0:*               LISTEN     
+Running test server_suite/pickup_hangup_test
+1589733716.464922: [0] (step #0) TU_CONNECT_CMD
+1589733716.465994: [0] Read responses until ON HOOK
+1589733716.466065: [0] Expecting: { ON HOOK RINGING* }
+1589733716.466685: [0] Message from server: ON HOOK 5
+1589733716.466729: [0] Change state: ON HOOK -> ON HOOK
+1589733716.466747: [0] (step #1) pickup
+1589733716.466839: [0] Read responses until DIAL TONE
+1589733716.466892: [0] Expecting: { ON HOOK* RINGING* DIAL TONE }
+1589733716.466931: [0] Message from server: DIAL TONE
+1589733716.466958: [0] Change state: ON HOOK -> DIAL TONE
+1589733716.466984: [0] (step #2) hangup
+1589733716.467052: [0] Read responses until ON HOOK
+1589733716.467089: [0] Expecting: { ON HOOK DIAL TONE* }
+1589733716.467197: [0] Message from server: ON HOOK 5
+1589733716.467215: [0] Change state: DIAL TONE -> ON HOOK
+1589733716.467225: [0] (step #3) TU_DISCONNECT_CMD
+1589733716.467278: [0] Disconnected, now expecting EOF
+1589733716.467312: [0] Read responses until EOF
+1589733716.467346: [0] Expecting: { ON HOOK* RINGING* DIAL TONE* RING BACK* BUSY SIGNAL* CONNECTED* ERROR* }
+1589733716.467384: [0] EOF reading message from server
+1589733716.467432: [0] Matched EOF after disconnect
+***Sending SIGHUP to server pid 6557
+***Server wait() returned = 0x0
+[PASS] server_suite::pickup_hangup_test: (1.00s)
+1589733716.465968: [0] Connected to server localhost:52890
+[----] Writing xml report in `crit.xml`.
+[====] Synthesis: Tested: 12 | Passing: 11 | Failing: 1 | Crashing: 0 

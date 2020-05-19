@@ -1,0 +1,1130 @@
+[----] Criterion v2.3.2
+[====] Running 13 tests from tracker_suite:
+[RUN ] tracker_suite::cancellation_test
+Running test tracker_suite/cancellation_test
+                   [expect START]
+Waiting for connection...
+Connected to child: fd = 10
+1589238246.639404: Driver <~~ START (sent at 1589238246.639293)
+                   [expect RECV]
+1589238246.639640: Driver <~~ CHANGE (sent at 1589238246.639504)
+                   [20360: init -> started]
+1589238246.639670: Driver <~~ CHANGE (sent at 1589238246.639658)
+                   [20361: init -> started]
+1589238246.641104: Driver <~~ CHANGE (sent at 1589238246.641034)
+                   [20360: started -> idle]
+1589238246.641141: Driver <~~ CHANGE (sent at 1589238246.641070)
+                   [20360: idle -> continued]
+1589238246.641150: Driver <~~ CHANGE (sent at 1589238246.641074)
+                   [20360: continued -> running]
+1589238246.641201: Driver <~~ SEND (sent at 1589238246.641076)
+1589238246.641208: Driver <~~ CHANGE (sent at 1589238246.641108)
+                   [20361: started -> idle]
+1589238246.641224: Driver <~~ CHANGE (sent at 1589238246.641117)
+                   [20361: idle -> continued]
+1589238246.641237: Driver <~~ CHANGE (sent at 1589238246.641120)
+                   [20361: continued -> running]
+1589238246.641250: Driver <~~ SEND (sent at 1589238246.641122)
+1589238247.641658: Driver <~~ CHANGE (sent at 1589238247.641596)
+                   [20361: running -> stopped]
+1589238247.641691: Driver <~~ RECV (sent at 1589238247.641640)
+                   [expect CANCEL]
+1589238247.641699: Driver <~~ CHANGE (sent at 1589238247.641642)
+                   [20361: stopped -> idle]
+1589238247.641706: Driver <~~ CANCEL (sent at 1589238247.641644)
+                   [expect RECV]
+1589238247.641833: Driver <~~ CHANGE (sent at 1589238247.641741)
+                   [20360: running -> stopped]
+1589238247.641852: Driver <~~ RECV (sent at 1589238247.641777)
+                   [expect END]
+1589238247.641858: Driver <~~ CHANGE (sent at 1589238247.641779)
+                   [20360: stopped -> idle]
+1589238247.641865: Driver <~~ CHANGE (sent at 1589238247.641786)
+                   [20360: idle -> running]
+1589238247.641871: Driver <~~ CHANGE (sent at 1589238247.641793)
+                   [20361: idle -> running]
+1589238247.642148: Driver <~~ CHANGE (sent at 1589238247.642103)
+                   [20361: running -> exited]
+1589238247.642299: Driver <~~ CHANGE (sent at 1589238247.642247)
+                   [20360: running -> exited]
+1589238247.642318: Driver <~~ END (sent at 1589238247.642256)
+                   [expect EOF]
+Short count reading event
+End of test tracker_suite/cancellation_test
+[PASS] tracker_suite::cancellation_test: (1.01s)
+polya_worker: no process found
+bin/polya: no process found
+[RUN ] tracker_suite::many_workers_many_trivial_test
+Running test tracker_suite/many_workers_many_trivial_test
+                   [expect START]
+Waiting for connection...
+Connected to child: fd = 10
+1589238247.661021: Driver <~~ START (sent at 1589238247.660927)
+                   [expect END]
+1589238247.662255: Driver <~~ CHANGE (sent at 1589238247.661094)
+                   [20371: init -> started]
+1589238247.662303: Driver <~~ CHANGE (sent at 1589238247.661213)
+                   [20372: init -> started]
+1589238247.662311: Driver <~~ CHANGE (sent at 1589238247.661339)
+                   [20373: init -> started]
+1589238247.662319: Driver <~~ CHANGE (sent at 1589238247.661449)
+                   [20374: init -> started]
+1589238247.662326: Driver <~~ CHANGE (sent at 1589238247.661581)
+                   [20375: init -> started]
+1589238247.662334: Driver <~~ CHANGE (sent at 1589238247.661716)
+                   [20376: init -> started]
+1589238247.662341: Driver <~~ CHANGE (sent at 1589238247.661834)
+                   [20377: init -> started]
+1589238247.662348: Driver <~~ CHANGE (sent at 1589238247.661972)
+                   [20378: init -> started]
+1589238247.662356: Driver <~~ CHANGE (sent at 1589238247.662098)
+                   [20379: init -> started]
+1589238247.662363: Driver <~~ CHANGE (sent at 1589238247.662217)
+                   [20380: init -> started]
+1589238247.662578: Driver <~~ CHANGE (sent at 1589238247.662519)
+                   [20371: started -> idle]
+1589238247.662708: Driver <~~ CHANGE (sent at 1589238247.662618)
+                   [20371: idle -> continued]
+1589238247.662745: Driver <~~ CHANGE (sent at 1589238247.662624)
+                   [20371: continued -> running]
+1589238247.662778: Driver <~~ SEND (sent at 1589238247.662626)
+1589238247.662847: Driver <~~ CHANGE (sent at 1589238247.662801)
+                   [20371: running -> stopped]
+1589238247.662881: Driver <~~ RECV (sent at 1589238247.662821)
+1589238247.662902: Driver <~~ CHANGE (sent at 1589238247.662824)
+                   [20371: stopped -> idle]
+1589238247.662980: Driver <~~ CHANGE (sent at 1589238247.662935)
+                   [20371: idle -> continued]
+1589238247.663014: Driver <~~ CHANGE (sent at 1589238247.662943)
+                   [20371: continued -> running]
+1589238247.663046: Driver <~~ SEND (sent at 1589238247.662945)
+1589238247.663115: Driver <~~ CHANGE (sent at 1589238247.663069)
+                   [20371: running -> stopped]
+1589238247.663149: Driver <~~ RECV (sent at 1589238247.663090)
+1589238247.663169: Driver <~~ CHANGE (sent at 1589238247.663092)
+                   [20371: stopped -> idle]
+1589238247.663252: Driver <~~ CHANGE (sent at 1589238247.663202)
+                   [20371: idle -> continued]
+1589238247.663290: Driver <~~ CHANGE (sent at 1589238247.663210)
+                   [20371: continued -> running]
+1589238247.663322: Driver <~~ SEND (sent at 1589238247.663212)
+1589238247.663391: Driver <~~ CHANGE (sent at 1589238247.663345)
+                   [20371: running -> stopped]
+1589238247.663426: Driver <~~ RECV (sent at 1589238247.663366)
+1589238247.663446: Driver <~~ CHANGE (sent at 1589238247.663369)
+                   [20371: stopped -> idle]
+1589238247.663523: Driver <~~ CHANGE (sent at 1589238247.663479)
+                   [20371: idle -> continued]
+1589238247.663558: Driver <~~ CHANGE (sent at 1589238247.663486)
+                   [20371: continued -> running]
+1589238247.663589: Driver <~~ SEND (sent at 1589238247.663488)
+1589238247.663653: Driver <~~ CHANGE (sent at 1589238247.663612)
+                   [20371: running -> stopped]
+1589238247.663687: Driver <~~ RECV (sent at 1589238247.663629)
+1589238247.663707: Driver <~~ CHANGE (sent at 1589238247.663632)
+                   [20371: stopped -> idle]
+1589238247.663783: Driver <~~ CHANGE (sent at 1589238247.663740)
+                   [20371: idle -> continued]
+1589238247.663888: Driver <~~ CHANGE (sent at 1589238247.663747)
+                   [20371: continued -> running]
+1589238247.663931: Driver <~~ SEND (sent at 1589238247.663749)
+1589238247.664007: Driver <~~ CHANGE (sent at 1589238247.663957)
+                   [20371: running -> stopped]
+1589238247.664042: Driver <~~ RECV (sent at 1589238247.663980)
+1589238247.664062: Driver <~~ CHANGE (sent at 1589238247.663982)
+                   [20371: stopped -> idle]
+1589238247.664141: Driver <~~ CHANGE (sent at 1589238247.664095)
+                   [20371: idle -> continued]
+1589238247.664175: Driver <~~ CHANGE (sent at 1589238247.664103)
+                   [20371: continued -> running]
+1589238247.664207: Driver <~~ SEND (sent at 1589238247.664105)
+1589238247.664270: Driver <~~ CHANGE (sent at 1589238247.664229)
+                   [20371: running -> stopped]
+1589238247.664305: Driver <~~ RECV (sent at 1589238247.664246)
+1589238247.664328: Driver <~~ CHANGE (sent at 1589238247.664249)
+                   [20371: stopped -> idle]
+1589238247.664410: Driver <~~ CHANGE (sent at 1589238247.664362)
+                   [20371: idle -> continued]
+1589238247.664445: Driver <~~ CHANGE (sent at 1589238247.664370)
+                   [20371: continued -> running]
+1589238247.664476: Driver <~~ SEND (sent at 1589238247.664372)
+1589238247.664545: Driver <~~ CHANGE (sent at 1589238247.664505)
+                   [20371: running -> stopped]
+1589238247.664580: Driver <~~ RECV (sent at 1589238247.664521)
+1589238247.664600: Driver <~~ CHANGE (sent at 1589238247.664524)
+                   [20371: stopped -> idle]
+1589238247.665901: Driver <~~ CHANGE (sent at 1589238247.665821)
+                   [20371: idle -> continued]
+1589238247.665922: Driver <~~ CHANGE (sent at 1589238247.665840)
+                   [20371: continued -> running]
+1589238247.665931: Driver <~~ SEND (sent at 1589238247.665843)
+1589238247.665994: Driver <~~ CHANGE (sent at 1589238247.665943)
+                   [20371: running -> stopped]
+1589238247.666012: Driver <~~ RECV (sent at 1589238247.665967)
+1589238247.666020: Driver <~~ CHANGE (sent at 1589238247.665969)
+                   [20371: stopped -> idle]
+1589238247.666076: Driver <~~ CHANGE (sent at 1589238247.666031)
+                   [20371: idle -> continued]
+1589238247.666093: Driver <~~ CHANGE (sent at 1589238247.666039)
+                   [20371: continued -> running]
+1589238247.666101: Driver <~~ SEND (sent at 1589238247.666041)
+1589238247.666154: Driver <~~ CHANGE (sent at 1589238247.666113)
+                   [20371: running -> stopped]
+1589238247.666171: Driver <~~ RECV (sent at 1589238247.666130)
+1589238247.666180: Driver <~~ CHANGE (sent at 1589238247.666132)
+                   [20371: stopped -> idle]
+1589238247.667005: Driver <~~ CHANGE (sent at 1589238247.666196)
+                   [20371: idle -> continued]
+1589238247.667051: Driver <~~ CHANGE (sent at 1589238247.666204)
+                   [20371: continued -> running]
+1589238247.667085: Driver <~~ SEND (sent at 1589238247.666206)
+1589238247.667106: Driver <~~ CHANGE (sent at 1589238247.666224)
+                   [20372: started -> idle]
+1589238247.667141: Driver <~~ CHANGE (sent at 1589238247.666232)
+                   [20372: idle -> continued]
+1589238247.667174: Driver <~~ CHANGE (sent at 1589238247.666236)
+                   [20372: continued -> running]
+1589238247.667208: Driver <~~ SEND (sent at 1589238247.666237)
+1589238247.667229: Driver <~~ CHANGE (sent at 1589238247.666253)
+                   [20371: running -> stopped]
+1589238247.667329: Driver <~~ RECV (sent at 1589238247.666264)
+1589238247.667355: Driver <~~ CHANGE (sent at 1589238247.666266)
+                   [20371: stopped -> idle]
+1589238247.667390: Driver <~~ CANCEL (sent at 1589238247.666268)
+1589238247.667411: Driver <~~ CHANGE (sent at 1589238247.666278)
+                   [20371: idle -> continued]
+1589238247.667445: Driver <~~ CHANGE (sent at 1589238247.666282)
+                   [20371: continued -> running]
+1589238247.667480: Driver <~~ SEND (sent at 1589238247.666285)
+1589238247.667501: Driver <~~ CHANGE (sent at 1589238247.666301)
+                   [20373: started -> idle]
+1589238247.667536: Driver <~~ CHANGE (sent at 1589238247.666309)
+                   [20373: idle -> continued]
+1589238247.667569: Driver <~~ CHANGE (sent at 1589238247.666312)
+                   [20371: running -> stopped]
+1589238247.667603: Driver <~~ RECV (sent at 1589238247.666323)
+1589238247.667629: Driver <~~ CHANGE (sent at 1589238247.666325)
+                   [20371: stopped -> idle]
+1589238247.667663: Driver <~~ CANCEL (sent at 1589238247.666327)
+Worker 20373 being canceled is not solving.
+Event tracker returned an error
+Aborting test tracker_suite/many_workers_many_trivial_test
+[----] tests/__helper.c:21: Assertion failed: The test driver returned an error (-1)
+[FAIL] tracker_suite::many_workers_many_trivial_test: (0.01s)
+polya_worker: no process found
+bin/polya: no process found
+[RUN ] tracker_suite::many_workers_several_crypto_test
+Running test tracker_suite/many_workers_several_crypto_test
+                   [expect START]
+Waiting for connection...
+Connected to child: fd = 10
+1589238247.687283: Driver <~~ START (sent at 1589238247.687232)
+                   [expect END]
+1589238247.687429: Driver <~~ CHANGE (sent at 1589238247.687410)
+                   [20390: init -> started]
+1589238247.687565: Driver <~~ CHANGE (sent at 1589238247.687544)
+                   [20391: init -> started]
+1589238247.687707: Driver <~~ CHANGE (sent at 1589238247.687687)
+                   [20392: init -> started]
+1589238247.687924: Driver <~~ CHANGE (sent at 1589238247.687895)
+                   [20393: init -> started]
+1589238247.688170: Driver <~~ CHANGE (sent at 1589238247.688146)
+                   [20394: init -> started]
+1589238247.688379: Driver <~~ CHANGE (sent at 1589238247.688359)
+                   [20395: init -> started]
+1589238247.688564: Driver <~~ CHANGE (sent at 1589238247.688545)
+                   [20396: init -> started]
+1589238247.688763: Driver <~~ CHANGE (sent at 1589238247.688740)
+                   [20397: init -> started]
+1589238247.688968: Driver <~~ CHANGE (sent at 1589238247.688947)
+                   [20398: init -> started]
+1589238247.689187: Driver <~~ CHANGE (sent at 1589238247.689165)
+                   [20399: init -> started]
+1589238247.689328: Driver <~~ CHANGE (sent at 1589238247.689314)
+                   [20390: started -> idle]
+1589238247.689383: Driver <~~ CHANGE (sent at 1589238247.689369)
+                   [20390: idle -> continued]
+1589238247.689412: Driver <~~ CHANGE (sent at 1589238247.689401)
+                   [20390: continued -> running]
+1589238247.689437: Driver <~~ SEND (sent at 1589238247.689426)
+1589238247.689493: Driver <~~ CHANGE (sent at 1589238247.689479)
+                   [20391: started -> idle]
+1589238247.689525: Driver <~~ CHANGE (sent at 1589238247.689513)
+                   [20391: idle -> continued]
+1589238247.689552: Driver <~~ CHANGE (sent at 1589238247.689540)
+                   [20391: continued -> running]
+1589238247.689576: Driver <~~ SEND (sent at 1589238247.689565)
+1589238247.689617: Driver <~~ CHANGE (sent at 1589238247.689604)
+                   [20392: started -> idle]
+1589238247.689649: Driver <~~ CHANGE (sent at 1589238247.689638)
+                   [20392: idle -> continued]
+1589238247.689676: Driver <~~ CHANGE (sent at 1589238247.689665)
+                   [20392: continued -> running]
+1589238247.689700: Driver <~~ SEND (sent at 1589238247.689689)
+1589238247.690863: Driver <~~ CHANGE (sent at 1589238247.690754)
+                   [20394: started -> idle]
+1589238247.690891: Driver <~~ CHANGE (sent at 1589238247.690781)
+                   [20394: idle -> continued]
+1589238247.690900: Driver <~~ CHANGE (sent at 1589238247.690786)
+                   [20393: started -> idle]
+1589238247.690908: Driver <~~ CHANGE (sent at 1589238247.690793)
+                   [20393: idle -> continued]
+1589238247.690917: Driver <~~ CHANGE (sent at 1589238247.690796)
+                   [20393: continued -> running]
+1589238247.690925: Driver <~~ SEND (sent at 1589238247.690798)
+1589238247.690932: Driver <~~ CHANGE (sent at 1589238247.690821)
+                   [20394: continued -> running]
+1589238247.690940: Driver <~~ SEND (sent at 1589238247.690823)
+1589238247.696934: Driver <~~ CHANGE (sent at 1589238247.696856)
+                   [20396: started -> idle]
+1589238247.696963: Driver <~~ CHANGE (sent at 1589238247.696885)
+                   [20396: idle -> continued]
+1589238247.696971: Driver <~~ CHANGE (sent at 1589238247.696888)
+                   [20396: continued -> running]
+1589238247.696979: Driver <~~ SEND (sent at 1589238247.696890)
+1589238247.698025: Driver <~~ CHANGE (sent at 1589238247.697946)
+                   [20399: started -> idle]
+1589238247.698055: Driver <~~ CHANGE (sent at 1589238247.697972)
+                   [20399: idle -> continued]
+1589238247.698065: Driver <~~ CHANGE (sent at 1589238247.697976)
+                   [20399: continued -> running]
+1589238247.698104: Driver <~~ SEND (sent at 1589238247.697977)
+1589238247.698440: Driver <~~ CHANGE (sent at 1589238247.698400)
+                   [20397: started -> idle]
+1589238247.698457: Driver <~~ CHANGE (sent at 1589238247.698411)
+                   [20397: idle -> continued]
+1589238247.698470: Driver <~~ CHANGE (sent at 1589238247.698414)
+                   [20397: continued -> running]
+1589238247.698478: Driver <~~ SEND (sent at 1589238247.698415)
+1589238247.698672: Driver <~~ CHANGE (sent at 1589238247.698642)
+                   [20395: started -> idle]
+1589238247.698685: Driver <~~ CHANGE (sent at 1589238247.698650)
+                   [20395: idle -> continued]
+1589238247.698696: Driver <~~ CHANGE (sent at 1589238247.698653)
+                   [20395: continued -> running]
+1589238247.698705: Driver <~~ SEND (sent at 1589238247.698654)
+1589238247.708984: Driver <~~ CHANGE (sent at 1589238247.708914)
+                   [20398: started -> idle]
+1589238247.709013: Driver <~~ CHANGE (sent at 1589238247.708936)
+                   [20398: idle -> continued]
+1589238247.709021: Driver <~~ CHANGE (sent at 1589238247.708939)
+                   [20398: continued -> running]
+1589238247.709029: Driver <~~ SEND (sent at 1589238247.708941)
+1589238251.579796: Driver <~~ CHANGE (sent at 1589238251.579590)
+                   [20392: running -> stopped]
+1589238251.579836: Driver <~~ RECV (sent at 1589238251.579622)
+1589238251.579846: Driver <~~ CHANGE (sent at 1589238251.579624)
+                   [20392: stopped -> idle]
+1589238251.579856: Driver <~~ CANCEL (sent at 1589238251.579696)
+1589238251.579863: Driver <~~ CANCEL (sent at 1589238251.579702)
+1589238251.579871: Driver <~~ CANCEL (sent at 1589238251.579706)
+1589238251.579877: Driver <~~ CANCEL (sent at 1589238251.579709)
+1589238251.579885: Driver <~~ CANCEL (sent at 1589238251.579713)
+1589238251.579892: Driver <~~ CANCEL (sent at 1589238251.579716)
+1589238251.579899: Driver <~~ CANCEL (sent at 1589238251.579719)
+1589238251.579907: Driver <~~ CANCEL (sent at 1589238251.579722)
+1589238251.579912: Driver <~~ CANCEL (sent at 1589238251.579725)
+1589238251.579920: Driver <~~ CHANGE (sent at 1589238251.579735)
+                   [20392: idle -> continued]
+1589238251.579927: Driver <~~ CHANGE (sent at 1589238251.579739)
+                   [20392: continued -> running]
+1589238251.579937: Driver <~~ SEND (sent at 1589238251.579741)
+1589238251.579942: Driver <~~ CHANGE (sent at 1589238251.579755)
+                   [20395: running -> stopped]
+1589238251.579949: Driver <~~ RECV (sent at 1589238251.579763)
+1589238251.579954: Driver <~~ CHANGE (sent at 1589238251.579765)
+                   [20395: stopped -> idle]
+1589238251.579970: Driver <~~ CHANGE (sent at 1589238251.579902)
+                   [20390: running -> stopped]
+1589238251.579977: Driver <~~ RECV (sent at 1589238251.579942)
+1589238251.579982: Driver <~~ CHANGE (sent at 1589238251.579945)
+                   [20390: stopped -> idle]
+1589238251.579989: Driver <~~ CHANGE (sent at 1589238251.579948)
+                   [20391: running -> stopped]
+1589238251.579995: Driver <~~ RECV (sent at 1589238251.579955)
+1589238251.580001: Driver <~~ CHANGE (sent at 1589238251.579957)
+                   [20391: stopped -> idle]
+1589238251.580008: Driver <~~ CHANGE (sent at 1589238251.579959)
+                   [20393: running -> stopped]
+1589238251.580015: Driver <~~ RECV (sent at 1589238251.579969)
+1589238251.580021: Driver <~~ CHANGE (sent at 1589238251.579972)
+                   [20393: stopped -> idle]
+1589238251.580027: Driver <~~ CHANGE (sent at 1589238251.579974)
+                   [20394: running -> stopped]
+1589238251.580033: Driver <~~ RECV (sent at 1589238251.579981)
+1589238251.580038: Driver <~~ CHANGE (sent at 1589238251.579983)
+                   [20394: stopped -> idle]
+1589238251.580044: Driver <~~ CHANGE (sent at 1589238251.579986)
+                   [20396: running -> stopped]
+1589238251.580051: Driver <~~ RECV (sent at 1589238251.579993)
+1589238251.580055: Driver <~~ CHANGE (sent at 1589238251.579996)
+                   [20396: stopped -> idle]
+1589238251.580062: Driver <~~ CHANGE (sent at 1589238251.580000)
+                   [20398: running -> stopped]
+1589238251.580068: Driver <~~ RECV (sent at 1589238251.580010)
+1589238251.580072: Driver <~~ CHANGE (sent at 1589238251.580013)
+                   [20398: stopped -> idle]
+1589238251.580079: Driver <~~ CHANGE (sent at 1589238251.580017)
+                   [20399: running -> stopped]
+1589238251.580122: Driver <~~ RECV (sent at 1589238251.580087)
+1589238251.580145: Driver <~~ CHANGE (sent at 1589238251.580095)
+                   [20399: stopped -> idle]
+1589238251.580186: Driver <~~ CHANGE (sent at 1589238251.580161)
+                   [20397: running -> stopped]
+1589238251.580196: Driver <~~ RECV (sent at 1589238251.580175)
+1589238251.580201: Driver <~~ CHANGE (sent at 1589238251.580177)
+                   [20397: stopped -> idle]
+1589238255.033535: Driver <~~ CHANGE (sent at 1589238255.033449)
+                   [20392: running -> stopped]
+1589238255.033595: Driver <~~ RECV (sent at 1589238255.033533)
+1589238255.033610: Driver <~~ CHANGE (sent at 1589238255.033536)
+                   [20392: stopped -> idle]
+1589238255.033633: Driver <~~ CHANGE (sent at 1589238255.033567)
+                   [20392: idle -> continued]
+1589238255.033645: Driver <~~ CHANGE (sent at 1589238255.033571)
+                   [20392: continued -> running]
+1589238255.033663: Driver <~~ SEND (sent at 1589238255.033572)
+1589238255.478498: Driver <~~ CHANGE (sent at 1589238255.478409)
+                   [20392: running -> stopped]
+1589238255.478557: Driver <~~ RECV (sent at 1589238255.478501)
+1589238255.478572: Driver <~~ CHANGE (sent at 1589238255.478504)
+                   [20392: stopped -> idle]
+1589238255.478601: Driver <~~ CHANGE (sent at 1589238255.478534)
+                   [20392: idle -> continued]
+1589238255.478615: Driver <~~ CHANGE (sent at 1589238255.478538)
+                   [20392: continued -> running]
+1589238255.478621: Driver <~~ SEND (sent at 1589238255.478539)
+1589238266.470734: Driver <~~ CHANGE (sent at 1589238266.470651)
+                   [20392: running -> stopped]
+1589238266.470772: Driver <~~ RECV (sent at 1589238266.470733)
+1589238266.470778: Driver <~~ CHANGE (sent at 1589238266.470736)
+                   [20392: stopped -> idle]
+1589238266.470785: Driver <~~ CHANGE (sent at 1589238266.470767)
+                   [20392: idle -> continued]
+1589238266.470791: Driver <~~ CHANGE (sent at 1589238266.470771)
+                   [20392: continued -> running]
+1589238266.470797: Driver <~~ SEND (sent at 1589238266.470772)
+1589238267.683687: Driver <~~ CHANGE (sent at 1589238267.683604)
+                   [20392: running -> stopped]
+1589238267.683724: Driver <~~ RECV (sent at 1589238267.683684)
+1589238267.683731: Driver <~~ CHANGE (sent at 1589238267.683687)
+                   [20392: stopped -> idle]
+1589238267.683737: Driver <~~ CHANGE (sent at 1589238267.683719)
+                   [20392: idle -> continued]
+1589238267.683752: Driver <~~ CHANGE (sent at 1589238267.683723)
+                   [20392: continued -> running]
+1589238267.683758: Driver <~~ SEND (sent at 1589238267.683724)
+1589238267.779770: Driver <~~ CHANGE (sent at 1589238267.779684)
+                   [20392: running -> stopped]
+1589238267.779806: Driver <~~ RECV (sent at 1589238267.779765)
+1589238267.779813: Driver <~~ CHANGE (sent at 1589238267.779768)
+                   [20392: stopped -> idle]
+1589238267.779892: Driver <~~ CHANGE (sent at 1589238267.779801)
+                   [20392: idle -> continued]
+1589238267.779903: Driver <~~ CHANGE (sent at 1589238267.779805)
+                   [20392: continued -> running]
+1589238267.779931: Driver <~~ SEND (sent at 1589238267.779806)
+1589238270.816243: Driver <~~ CHANGE (sent at 1589238270.816162)
+                   [20392: running -> stopped]
+1589238270.816282: Driver <~~ RECV (sent at 1589238270.816242)
+1589238270.816289: Driver <~~ CHANGE (sent at 1589238270.816245)
+                   [20392: stopped -> idle]
+1589238270.816296: Driver <~~ CHANGE (sent at 1589238270.816278)
+                   [20392: idle -> continued]
+1589238270.816302: Driver <~~ CHANGE (sent at 1589238270.816282)
+                   [20392: continued -> running]
+1589238270.816308: Driver <~~ SEND (sent at 1589238270.816284)
+1589238279.810163: Driver <~~ CHANGE (sent at 1589238279.810082)
+                   [20392: running -> stopped]
+1589238279.810200: Driver <~~ RECV (sent at 1589238279.810161)
+1589238279.810207: Driver <~~ CHANGE (sent at 1589238279.810164)
+                   [20392: stopped -> idle]
+1589238279.810214: Driver <~~ CHANGE (sent at 1589238279.810196)
+                   [20392: idle -> continued]
+1589238279.810220: Driver <~~ CHANGE (sent at 1589238279.810201)
+                   [20392: continued -> running]
+1589238279.810226: Driver <~~ SEND (sent at 1589238279.810202)
+1589238280.426924: Driver <~~ CHANGE (sent at 1589238280.426842)
+                   [20392: running -> stopped]
+1589238280.426961: Driver <~~ RECV (sent at 1589238280.426922)
+1589238280.426968: Driver <~~ CHANGE (sent at 1589238280.426925)
+                   [20392: stopped -> idle]
+1589238280.426975: Driver <~~ CHANGE (sent at 1589238280.426958)
+                   [20392: idle -> continued]
+1589238280.426981: Driver <~~ CHANGE (sent at 1589238280.426962)
+                   [20392: continued -> running]
+1589238280.426987: Driver <~~ SEND (sent at 1589238280.426963)
+1589238282.076261: Driver <~~ CHANGE (sent at 1589238282.076179)
+                   [20392: running -> stopped]
+1589238282.076298: Driver <~~ RECV (sent at 1589238282.076260)
+1589238282.076305: Driver <~~ CHANGE (sent at 1589238282.076263)
+                   [20392: stopped -> idle]
+1589238282.076313: Driver <~~ CHANGE (sent at 1589238282.076297)
+                   [20390: idle -> running]
+1589238282.076319: Driver <~~ CHANGE (sent at 1589238282.076304)
+                   [20391: idle -> running]
+1589238282.076326: Driver <~~ CHANGE (sent at 1589238282.076311)
+                   [20392: idle -> running]
+1589238282.076332: Driver <~~ CHANGE (sent at 1589238282.076318)
+                   [20393: idle -> running]
+1589238282.076339: Driver <~~ CHANGE (sent at 1589238282.076325)
+                   [20394: idle -> running]
+1589238282.076345: Driver <~~ CHANGE (sent at 1589238282.076332)
+                   [20395: idle -> running]
+1589238282.076352: Driver <~~ CHANGE (sent at 1589238282.076337)
+                   [20396: idle -> running]
+1589238282.076358: Driver <~~ CHANGE (sent at 1589238282.076343)
+                   [20397: idle -> running]
+1589238282.076389: Driver <~~ CHANGE (sent at 1589238282.076348)
+                   [20398: idle -> running]
+1589238282.076395: Driver <~~ CHANGE (sent at 1589238282.076354)
+                   [20399: idle -> running]
+1589238282.076889: Driver <~~ CHANGE (sent at 1589238282.076839)
+                   [20394: running -> exited]
+1589238282.076909: Driver <~~ CHANGE (sent at 1589238282.076858)
+                   [20395: running -> exited]
+1589238282.076915: Driver <~~ CHANGE (sent at 1589238282.076865)
+                   [20398: running -> exited]
+1589238282.076921: Driver <~~ CHANGE (sent at 1589238282.076870)
+                   [20399: running -> exited]
+1589238282.077187: Driver <~~ CHANGE (sent at 1589238282.077142)
+                   [20392: running -> exited]
+1589238282.077214: Driver <~~ CHANGE (sent at 1589238282.077165)
+                   [20393: running -> exited]
+1589238282.077221: Driver <~~ CHANGE (sent at 1589238282.077171)
+                   [20397: running -> exited]
+1589238282.077286: Driver <~~ CHANGE (sent at 1589238282.077273)
+                   [20391: running -> exited]
+1589238282.077373: Driver <~~ CHANGE (sent at 1589238282.077361)
+                   [20396: running -> exited]
+1589238282.077623: Driver <~~ CHANGE (sent at 1589238282.077552)
+                   [20390: running -> exited]
+1589238282.077649: Driver <~~ END (sent at 1589238282.077568)
+                   [expect EOF]
+Short count reading event
+End of test tracker_suite/many_workers_several_crypto_test
+[PASS] tracker_suite::many_workers_several_crypto_test: (34.39s)
+polya_worker: no process found
+bin/polya: no process found
+[RUN ] tracker_suite::many_workers_several_mixed_test
+Running test tracker_suite/many_workers_several_mixed_test
+                   [expect START]
+Waiting for connection...
+Connected to child: fd = 10
+1589238282.096827: Driver <~~ START (sent at 1589238282.096736)
+                   [expect END]
+1589238282.098144: Driver <~~ CHANGE (sent at 1589238282.096904)
+                   [20410: init -> started]
+1589238282.098192: Driver <~~ CHANGE (sent at 1589238282.097037)
+                   [20411: init -> started]
+1589238282.098227: Driver <~~ CHANGE (sent at 1589238282.097164)
+                   [20412: init -> started]
+1589238282.098238: Driver <~~ CHANGE (sent at 1589238282.097285)
+                   [20413: init -> started]
+1589238282.098247: Driver <~~ CHANGE (sent at 1589238282.097418)
+                   [20414: init -> started]
+1589238282.098256: Driver <~~ CHANGE (sent at 1589238282.097565)
+                   [20415: init -> started]
+1589238282.098265: Driver <~~ CHANGE (sent at 1589238282.097706)
+                   [20416: init -> started]
+1589238282.098275: Driver <~~ CHANGE (sent at 1589238282.097829)
+                   [20417: init -> started]
+1589238282.098284: Driver <~~ CHANGE (sent at 1589238282.097968)
+                   [20418: init -> started]
+1589238282.098293: Driver <~~ CHANGE (sent at 1589238282.098102)
+                   [20419: init -> started]
+1589238282.098549: Driver <~~ CHANGE (sent at 1589238282.098467)
+                   [20410: started -> idle]
+1589238282.098570: Driver <~~ CHANGE (sent at 1589238282.098499)
+                   [20410: idle -> continued]
+1589238282.098579: Driver <~~ CHANGE (sent at 1589238282.098504)
+                   [20410: continued -> running]
+1589238282.098589: Driver <~~ SEND (sent at 1589238282.098506)
+1589238282.098724: Driver <~~ CHANGE (sent at 1589238282.098666)
+                   [20410: running -> stopped]
+1589238282.098738: Driver <~~ RECV (sent at 1589238282.098686)
+1589238282.098746: Driver <~~ CHANGE (sent at 1589238282.098688)
+                   [20410: stopped -> idle]
+1589238282.098755: Driver <~~ CHANGE (sent at 1589238282.098697)
+                   [20410: idle -> continued]
+1589238282.098764: Driver <~~ CHANGE (sent at 1589238282.098701)
+                   [20410: continued -> running]
+1589238282.098773: Driver <~~ SEND (sent at 1589238282.098702)
+1589238282.098877: Driver <~~ CHANGE (sent at 1589238282.098819)
+                   [20410: running -> stopped]
+1589238282.098890: Driver <~~ RECV (sent at 1589238282.098836)
+1589238282.098898: Driver <~~ CHANGE (sent at 1589238282.098839)
+                   [20410: stopped -> idle]
+1589238282.098907: Driver <~~ CHANGE (sent at 1589238282.098847)
+                   [20410: idle -> continued]
+1589238282.098916: Driver <~~ CHANGE (sent at 1589238282.098851)
+                   [20410: continued -> running]
+1589238282.098924: Driver <~~ SEND (sent at 1589238282.098853)
+1589238282.099784: Driver <~~ CHANGE (sent at 1589238282.099672)
+                   [20411: started -> idle]
+1589238282.099816: Driver <~~ CHANGE (sent at 1589238282.099700)
+                   [20411: idle -> continued]
+1589238282.099911: Driver <~~ CHANGE (sent at 1589238282.099704)
+                   [20411: continued -> running]
+1589238282.099923: Driver <~~ SEND (sent at 1589238282.099706)
+1589238282.099932: Driver <~~ CHANGE (sent at 1589238282.099732)
+                   [20413: started -> idle]
+1589238282.099945: Driver <~~ CHANGE (sent at 1589238282.099740)
+                   [20413: idle -> continued]
+1589238282.099957: Driver <~~ CHANGE (sent at 1589238282.099744)
+                   [20413: continued -> running]
+1589238282.099966: Driver <~~ SEND (sent at 1589238282.099745)
+1589238282.100035: Driver <~~ CHANGE (sent at 1589238282.099987)
+                   [20412: started -> idle]
+1589238282.100051: Driver <~~ CHANGE (sent at 1589238282.100001)
+                   [20412: idle -> continued]
+1589238282.100062: Driver <~~ CHANGE (sent at 1589238282.100004)
+                   [20412: continued -> running]
+1589238282.100072: Driver <~~ SEND (sent at 1589238282.100006)
+1589238282.101308: Driver <~~ CHANGE (sent at 1589238282.101244)
+                   [20414: started -> idle]
+1589238282.101336: Driver <~~ CHANGE (sent at 1589238282.101264)
+                   [20414: idle -> continued]
+1589238282.101347: Driver <~~ CHANGE (sent at 1589238282.101269)
+                   [20414: continued -> running]
+1589238282.101358: Driver <~~ SEND (sent at 1589238282.101270)
+1589238282.109278: Driver <~~ CHANGE (sent at 1589238282.109174)
+                   [20416: started -> idle]
+1589238282.109309: Driver <~~ CHANGE (sent at 1589238282.109199)
+                   [20416: idle -> continued]
+1589238282.109317: Driver <~~ CHANGE (sent at 1589238282.109203)
+                   [20416: continued -> running]
+1589238282.109328: Driver <~~ SEND (sent at 1589238282.109205)
+1589238282.109360: Driver <~~ CHANGE (sent at 1589238282.109231)
+                   [20418: started -> idle]
+1589238282.109369: Driver <~~ CHANGE (sent at 1589238282.109239)
+                   [20418: idle -> continued]
+1589238282.109379: Driver <~~ CHANGE (sent at 1589238282.109242)
+                   [20418: continued -> running]
+1589238282.109387: Driver <~~ SEND (sent at 1589238282.109244)
+1589238282.110400: Driver <~~ CHANGE (sent at 1589238282.110314)
+                   [20415: started -> idle]
+1589238282.110426: Driver <~~ CHANGE (sent at 1589238282.110333)
+                   [20415: idle -> continued]
+1589238282.110436: Driver <~~ CHANGE (sent at 1589238282.110337)
+                   [20415: continued -> running]
+1589238282.110444: Driver <~~ SEND (sent at 1589238282.110338)
+1589238282.110451: Driver <~~ CHANGE (sent at 1589238282.110363)
+                   [20419: started -> idle]
+1589238282.110460: Driver <~~ CHANGE (sent at 1589238282.110368)
+                   [20419: idle -> continued]
+1589238282.110468: Driver <~~ CHANGE (sent at 1589238282.110371)
+                   [20419: continued -> running]
+1589238282.110476: Driver <~~ SEND (sent at 1589238282.110372)
+1589238282.111512: Driver <~~ CHANGE (sent at 1589238282.111456)
+                   [20417: started -> idle]
+1589238282.111536: Driver <~~ CHANGE (sent at 1589238282.111475)
+                   [20417: idle -> continued]
+1589238282.111545: Driver <~~ CHANGE (sent at 1589238282.111478)
+                   [20417: continued -> running]
+1589238282.111554: Driver <~~ SEND (sent at 1589238282.111480)
+1589238282.658456: Driver <~~ CHANGE (sent at 1589238282.658424)
+                   [20416: running -> stopped]
+1589238282.658481: Driver <~~ RECV (sent at 1589238282.658459)
+1589238282.658488: Driver <~~ CHANGE (sent at 1589238282.658461)
+                   [20416: stopped -> idle]
+1589238282.658668: Driver <~~ CANCEL (sent at 1589238282.658525)
+1589238282.658706: Driver <~~ CANCEL (sent at 1589238282.658535)
+1589238282.658721: Driver <~~ CANCEL (sent at 1589238282.658539)
+1589238282.658736: Driver <~~ CANCEL (sent at 1589238282.658542)
+1589238282.658746: Driver <~~ CANCEL (sent at 1589238282.658546)
+1589238282.658752: Driver <~~ CANCEL (sent at 1589238282.658549)
+1589238282.658757: Driver <~~ CANCEL (sent at 1589238282.658552)
+1589238282.658762: Driver <~~ CANCEL (sent at 1589238282.658555)
+1589238282.658777: Driver <~~ CANCEL (sent at 1589238282.658558)
+1589238282.658788: Driver <~~ CHANGE (sent at 1589238282.658567)
+                   [20416: idle -> continued]
+1589238282.658797: Driver <~~ CHANGE (sent at 1589238282.658572)
+                   [20412: running -> stopped]
+1589238282.658808: Driver <~~ RECV (sent at 1589238282.658583)
+1589238282.658816: Driver <~~ CHANGE (sent at 1589238282.658585)
+                   [20412: stopped -> idle]
+1589238282.658823: Driver <~~ CHANGE (sent at 1589238282.658588)
+                   [20416: continued -> running]
+1589238282.658829: Driver <~~ SEND (sent at 1589238282.658589)
+1589238282.658838: Driver <~~ CHANGE (sent at 1589238282.658599)
+                   [20410: running -> stopped]
+1589238282.658844: Driver <~~ RECV (sent at 1589238282.658608)
+1589238282.658850: Driver <~~ CHANGE (sent at 1589238282.658609)
+                   [20410: stopped -> idle]
+1589238282.658860: Driver <~~ CHANGE (sent at 1589238282.658612)
+                   [20411: running -> stopped]
+1589238282.658866: Driver <~~ RECV (sent at 1589238282.658621)
+1589238282.658872: Driver <~~ CHANGE (sent at 1589238282.658623)
+                   [20411: stopped -> idle]
+1589238282.658882: Driver <~~ CHANGE (sent at 1589238282.658627)
+                   [20414: running -> stopped]
+1589238282.658891: Driver <~~ RECV (sent at 1589238282.658634)
+1589238282.658899: Driver <~~ CHANGE (sent at 1589238282.658635)
+                   [20414: stopped -> idle]
+1589238282.658909: Driver <~~ CHANGE (sent at 1589238282.658638)
+                   [20413: running -> stopped]
+1589238282.658918: Driver <~~ RECV (sent at 1589238282.658649)
+1589238282.658926: Driver <~~ CHANGE (sent at 1589238282.658652)
+                   [20413: stopped -> idle]
+1589238282.658936: Driver <~~ CHANGE (sent at 1589238282.658656)
+                   [20418: running -> stopped]
+1589238282.658945: Driver <~~ RECV (sent at 1589238282.658666)
+1589238282.658953: Driver <~~ CHANGE (sent at 1589238282.658669)
+                   [20418: stopped -> idle]
+1589238282.658963: Driver <~~ CHANGE (sent at 1589238282.658672)
+                   [20415: running -> stopped]
+1589238282.658972: Driver <~~ RECV (sent at 1589238282.658682)
+1589238282.658980: Driver <~~ CHANGE (sent at 1589238282.658684)
+                   [20415: stopped -> idle]
+1589238282.658991: Driver <~~ CHANGE (sent at 1589238282.658687)
+                   [20419: running -> stopped]
+1589238282.659000: Driver <~~ RECV (sent at 1589238282.658698)
+1589238282.659009: Driver <~~ CHANGE (sent at 1589238282.658700)
+                   [20419: stopped -> idle]
+1589238282.659018: Driver <~~ CHANGE (sent at 1589238282.658763)
+                   [20417: running -> stopped]
+1589238282.659028: Driver <~~ RECV (sent at 1589238282.658785)
+1589238282.659036: Driver <~~ CHANGE (sent at 1589238282.658787)
+                   [20417: stopped -> idle]
+1589238286.014716: Driver <~~ CHANGE (sent at 1589238286.014653)
+                   [20416: running -> stopped]
+1589238286.014742: Driver <~~ RECV (sent at 1589238286.014703)
+1589238286.014748: Driver <~~ CHANGE (sent at 1589238286.014705)
+                   [20416: stopped -> idle]
+1589238286.014755: Driver <~~ CHANGE (sent at 1589238286.014723)
+                   [20416: idle -> continued]
+1589238286.014761: Driver <~~ CHANGE (sent at 1589238286.014727)
+                   [20416: continued -> running]
+1589238286.014767: Driver <~~ SEND (sent at 1589238286.014729)
+1589238286.014873: Driver <~~ CHANGE (sent at 1589238286.014829)
+                   [20416: running -> stopped]
+1589238286.014889: Driver <~~ RECV (sent at 1589238286.014848)
+1589238286.014895: Driver <~~ CHANGE (sent at 1589238286.014850)
+                   [20416: stopped -> idle]
+1589238286.014901: Driver <~~ CHANGE (sent at 1589238286.014858)
+                   [20416: idle -> continued]
+1589238286.014914: Driver <~~ CHANGE (sent at 1589238286.014861)
+                   [20416: continued -> running]
+1589238286.014920: Driver <~~ SEND (sent at 1589238286.014862)
+1589238316.014995: Driver: timeout (30, 0)
+Timeout reading event from child
+Aborting test tracker_suite/many_workers_several_mixed_test
+[----] tests/__helper.c:21: Assertion failed: The test driver returned an error (-1)
+[FAIL] tracker_suite::many_workers_several_mixed_test: (33.92s)
+polya_worker: no process found
+bin/polya: no process found
+[RUN ] tracker_suite::one_worker_multi_crypto_test
+Running test tracker_suite/one_worker_multi_crypto_test
+                   [expect START]
+Waiting for connection...
+Connected to child: fd = 10
+1589238316.035289: Driver <~~ START (sent at 1589238316.035202)
+                   [expect SEND]
+1589238316.035423: Driver <~~ CHANGE (sent at 1589238316.035373)
+                   [20429: init -> started]
+1589238316.037165: Driver <~~ CHANGE (sent at 1589238316.037088)
+                   [20429: started -> idle]
+1589238316.037214: Driver <~~ CHANGE (sent at 1589238316.037141)
+                   [20429: idle -> continued]
+1589238316.037271: Driver <~~ CHANGE (sent at 1589238316.037145)
+                   [20429: continued -> running]
+1589238316.037287: Driver <~~ SEND (sent at 1589238316.037148)
+                   [expect RECV]
+1589238318.370465: Driver <~~ CHANGE (sent at 1589238318.370379)
+                   [20429: running -> stopped]
+1589238318.370504: Driver <~~ RECV (sent at 1589238318.370458)
+                   [expect SEND]
+1589238318.370512: Driver <~~ CHANGE (sent at 1589238318.370461)
+                   [20429: stopped -> idle]
+1589238318.370592: Driver <~~ CHANGE (sent at 1589238318.370560)
+                   [20429: idle -> continued]
+1589238318.370608: Driver <~~ CHANGE (sent at 1589238318.370569)
+                   [20429: continued -> running]
+1589238318.370614: Driver <~~ SEND (sent at 1589238318.370570)
+                   [expect RECV]
+1589238318.789695: Driver <~~ CHANGE (sent at 1589238318.789622)
+                   [20429: running -> stopped]
+1589238318.789732: Driver <~~ RECV (sent at 1589238318.789685)
+                   [expect SEND]
+1589238318.789740: Driver <~~ CHANGE (sent at 1589238318.789688)
+                   [20429: stopped -> idle]
+1589238318.789747: Driver <~~ CHANGE (sent at 1589238318.789719)
+                   [20429: idle -> continued]
+1589238318.789753: Driver <~~ CHANGE (sent at 1589238318.789723)
+                   [20429: continued -> running]
+1589238318.789759: Driver <~~ SEND (sent at 1589238318.789724)
+                   [expect RECV]
+1589238323.164191: Driver <~~ CHANGE (sent at 1589238323.164112)
+                   [20429: running -> stopped]
+1589238323.164226: Driver <~~ RECV (sent at 1589238323.164182)
+                   [expect END]
+1589238323.164268: Driver <~~ CHANGE (sent at 1589238323.164184)
+                   [20429: stopped -> idle]
+1589238323.164279: Driver <~~ CHANGE (sent at 1589238323.164207)
+                   [20429: idle -> running]
+1589238323.164702: Driver <~~ CHANGE (sent at 1589238323.164646)
+                   [20429: running -> exited]
+1589238323.164741: Driver <~~ END (sent at 1589238323.164659)
+                   [expect EOF]
+Short count reading event
+End of test tracker_suite/one_worker_multi_crypto_test
+[PASS] tracker_suite::one_worker_multi_crypto_test: (7.13s)
+polya_worker: no process found
+bin/polya: no process found
+[RUN ] tracker_suite::one_worker_multi_trivial_test
+Running test tracker_suite/one_worker_multi_trivial_test
+                   [expect START]
+Waiting for connection...
+Connected to child: fd = 10
+1589238323.183211: Driver <~~ START (sent at 1589238323.183162)
+                   [expect SEND]
+1589238323.183365: Driver <~~ CHANGE (sent at 1589238323.183315)
+                   [20439: init -> started]
+1589238323.184910: Driver <~~ CHANGE (sent at 1589238323.184835)
+                   [20439: started -> idle]
+1589238323.184955: Driver <~~ CHANGE (sent at 1589238323.184884)
+                   [20439: idle -> continued]
+1589238323.184972: Driver <~~ CHANGE (sent at 1589238323.184888)
+                   [20439: continued -> running]
+1589238323.184986: Driver <~~ SEND (sent at 1589238323.184890)
+                   [expect RECV]
+1589238323.185150: Driver <~~ CHANGE (sent at 1589238323.185092)
+                   [20439: running -> stopped]
+1589238323.185191: Driver <~~ RECV (sent at 1589238323.185137)
+                   [expect SEND]
+1589238323.185206: Driver <~~ CHANGE (sent at 1589238323.185140)
+                   [20439: stopped -> idle]
+1589238323.185219: Driver <~~ CHANGE (sent at 1589238323.185153)
+                   [20439: idle -> continued]
+1589238323.185229: Driver <~~ CHANGE (sent at 1589238323.185157)
+                   [20439: continued -> running]
+1589238323.185241: Driver <~~ SEND (sent at 1589238323.185159)
+                   [expect RECV]
+1589238323.185412: Driver <~~ CHANGE (sent at 1589238323.185342)
+                   [20439: running -> stopped]
+1589238323.185446: Driver <~~ RECV (sent at 1589238323.185373)
+                   [expect SEND]
+1589238323.185461: Driver <~~ CHANGE (sent at 1589238323.185375)
+                   [20439: stopped -> idle]
+1589238323.185474: Driver <~~ CHANGE (sent at 1589238323.185386)
+                   [20439: idle -> continued]
+1589238323.185489: Driver <~~ CHANGE (sent at 1589238323.185390)
+                   [20439: continued -> running]
+1589238323.185503: Driver <~~ SEND (sent at 1589238323.185392)
+                   [expect RECV]
+1589238323.185605: Driver <~~ CHANGE (sent at 1589238323.185532)
+                   [20439: running -> stopped]
+1589238323.185629: Driver <~~ RECV (sent at 1589238323.185551)
+                   [expect END]
+1589238323.185643: Driver <~~ CHANGE (sent at 1589238323.185554)
+                   [20439: stopped -> idle]
+1589238323.185658: Driver <~~ CHANGE (sent at 1589238323.185562)
+                   [20439: idle -> running]
+1589238323.186014: Driver <~~ CHANGE (sent at 1589238323.185966)
+                   [20439: running -> exited]
+1589238323.186038: Driver <~~ END (sent at 1589238323.185974)
+                   [expect EOF]
+Short count reading event
+End of test tracker_suite/one_worker_multi_trivial_test
+[PASS] tracker_suite::one_worker_multi_trivial_test: (0.01s)
+polya_worker: no process found
+bin/polya: no process found
+[RUN ] tracker_suite::one_worker_one_crypto_test
+Running test tracker_suite/one_worker_one_crypto_test
+                   [expect START]
+Waiting for connection...
+Connected to child: fd = 10
+1589238323.208791: Driver <~~ START (sent at 1589238323.208681)
+                   [expect SEND]
+1589238323.208944: Driver <~~ CHANGE (sent at 1589238323.208893)
+                   [20449: init -> started]
+1589238323.210803: Driver <~~ CHANGE (sent at 1589238323.210721)
+                   [20449: started -> idle]
+1589238323.210845: Driver <~~ CHANGE (sent at 1589238323.210777)
+                   [20449: idle -> continued]
+1589238323.210858: Driver <~~ CHANGE (sent at 1589238323.210782)
+                   [20449: continued -> running]
+1589238323.210869: Driver <~~ SEND (sent at 1589238323.210785)
+                   [expect RECV]
+1589238323.361224: Driver <~~ CHANGE (sent at 1589238323.360995)
+                   [20449: running -> stopped]
+1589238323.361264: Driver <~~ RECV (sent at 1589238323.361066)
+                   [expect END]
+1589238323.361307: Driver <~~ CHANGE (sent at 1589238323.361069)
+                   [20449: stopped -> idle]
+1589238323.361315: Driver <~~ CHANGE (sent at 1589238323.361180)
+                   [20449: idle -> running]
+1589238323.362097: Driver <~~ CHANGE (sent at 1589238323.361698)
+                   [20449: running -> exited]
+1589238323.362139: Driver <~~ END (sent at 1589238323.361729)
+                   [expect EOF]
+Short count reading event
+End of test tracker_suite/one_worker_one_crypto_test
+[PASS] tracker_suite::one_worker_one_crypto_test: (0.16s)
+polya_worker: no process found
+bin/polya: no process found
+[RUN ] tracker_suite::one_worker_one_trivial_test
+Running test tracker_suite/one_worker_one_trivial_test
+                   [expect START]
+Waiting for connection...
+Connected to child: fd = 10
+1589238323.380450: Driver <~~ START (sent at 1589238323.380363)
+                   [expect SEND]
+1589238323.380535: Driver <~~ CHANGE (sent at 1589238323.380511)
+                   [20459: init -> started]
+1589238323.382043: Driver <~~ CHANGE (sent at 1589238323.381967)
+                   [20459: started -> idle]
+1589238323.382078: Driver <~~ CHANGE (sent at 1589238323.382014)
+                   [20459: idle -> continued]
+1589238323.382085: Driver <~~ CHANGE (sent at 1589238323.382018)
+                   [20459: continued -> running]
+1589238323.382092: Driver <~~ SEND (sent at 1589238323.382019)
+                   [expect RECV]
+1589238323.382307: Driver <~~ CHANGE (sent at 1589238323.382247)
+                   [20459: running -> stopped]
+1589238323.382336: Driver <~~ RECV (sent at 1589238323.382279)
+                   [expect END]
+1589238323.382345: Driver <~~ CHANGE (sent at 1589238323.382282)
+                   [20459: stopped -> idle]
+1589238323.382353: Driver <~~ CHANGE (sent at 1589238323.382292)
+                   [20459: idle -> running]
+1589238323.382751: Driver <~~ CHANGE (sent at 1589238323.382731)
+                   [20459: running -> exited]
+1589238323.382765: Driver <~~ END (sent at 1589238323.382746)
+                   [expect EOF]
+Short count reading event
+End of test tracker_suite/one_worker_one_trivial_test
+[PASS] tracker_suite::one_worker_one_trivial_test: (0.00s)
+polya_worker: no process found
+bin/polya: no process found
+[RUN ] tracker_suite::start_end_test
+Running test tracker_suite/start_end_test
+                   [expect START]
+Waiting for connection...
+Connected to child: fd = 10
+1589238323.406772: Driver <~~ START (sent at 1589238323.406661)
+                   [expect END]
+1589238323.406935: Driver <~~ CHANGE (sent at 1589238323.406870)
+                   [20469: init -> started]
+1589238323.408707: Driver <~~ CHANGE (sent at 1589238323.408632)
+                   [20469: started -> idle]
+1589238323.409124: Driver <~~ CHANGE (sent at 1589238323.409068)
+                   [20469: idle -> exited]
+1589238323.409152: Driver <~~ END (sent at 1589238323.409085)
+                   [expect EOF]
+Short count reading event
+End of test tracker_suite/start_end_test
+[PASS] tracker_suite::start_end_test: (0.01s)
+polya_worker: no process found
+bin/polya: no process found
+[RUN ] tracker_suite::two_workers_multi_crypto_test
+Running test tracker_suite/two_workers_multi_crypto_test
+                   [expect START]
+Waiting for connection...
+Connected to child: fd = 10
+1589238323.429448: Driver <~~ START (sent at 1589238323.429356)
+                   [expect END]
+1589238323.429558: Driver <~~ CHANGE (sent at 1589238323.429536)
+                   [20479: init -> started]
+1589238323.429692: Driver <~~ CHANGE (sent at 1589238323.429667)
+                   [20480: init -> started]
+1589238323.431190: Driver <~~ CHANGE (sent at 1589238323.431076)
+                   [20479: started -> idle]
+1589238323.431223: Driver <~~ CHANGE (sent at 1589238323.431124)
+                   [20479: idle -> continued]
+1589238323.431238: Driver <~~ CHANGE (sent at 1589238323.431129)
+                   [20479: continued -> running]
+1589238323.431246: Driver <~~ SEND (sent at 1589238323.431131)
+1589238323.431342: Driver <~~ CHANGE (sent at 1589238323.431264)
+                   [20480: started -> idle]
+1589238323.431380: Driver <~~ CHANGE (sent at 1589238323.431276)
+                   [20480: idle -> continued]
+1589238323.431389: Driver <~~ CHANGE (sent at 1589238323.431280)
+                   [20480: continued -> running]
+1589238323.431398: Driver <~~ SEND (sent at 1589238323.431281)
+1589238338.817612: Driver <~~ CHANGE (sent at 1589238338.817526)
+                   [20480: running -> stopped]
+1589238338.817671: Driver <~~ RECV (sent at 1589238338.817564)
+1589238338.817708: Driver <~~ CHANGE (sent at 1589238338.817566)
+                   [20480: stopped -> idle]
+1589238338.817732: Driver <~~ CANCEL (sent at 1589238338.817670)
+1589238338.817746: Driver <~~ CHANGE (sent at 1589238338.817708)
+                   [20480: idle -> continued]
+1589238338.817757: Driver <~~ CHANGE (sent at 1589238338.817712)
+                   [20480: continued -> running]
+1589238338.817765: Driver <~~ SEND (sent at 1589238338.817714)
+1589238338.817805: Driver <~~ CHANGE (sent at 1589238338.817791)
+                   [20479: running -> stopped]
+1589238338.817855: Driver <~~ RECV (sent at 1589238338.817846)
+1589238338.817878: Driver <~~ CHANGE (sent at 1589238338.817870)
+                   [20479: stopped -> idle]
+1589238348.088973: Driver <~~ CHANGE (sent at 1589238348.088899)
+                   [20480: running -> stopped]
+1589238348.089009: Driver <~~ RECV (sent at 1589238348.088963)
+1589238348.089021: Driver <~~ CHANGE (sent at 1589238348.088965)
+                   [20480: stopped -> idle]
+1589238348.089033: Driver <~~ CHANGE (sent at 1589238348.088988)
+                   [20480: idle -> continued]
+1589238348.089044: Driver <~~ CHANGE (sent at 1589238348.088991)
+                   [20480: continued -> running]
+1589238348.089065: Driver <~~ SEND (sent at 1589238348.088993)
+1589238352.506565: Driver <~~ CHANGE (sent at 1589238352.506499)
+                   [20480: running -> stopped]
+1589238352.506597: Driver <~~ RECV (sent at 1589238352.506559)
+1589238352.506609: Driver <~~ CHANGE (sent at 1589238352.506561)
+                   [20480: stopped -> idle]
+1589238352.506620: Driver <~~ CHANGE (sent at 1589238352.506600)
+                   [20479: idle -> running]
+1589238352.506630: Driver <~~ CHANGE (sent at 1589238352.506620)
+                   [20480: idle -> running]
+1589238352.507025: Driver <~~ CHANGE (sent at 1589238352.506978)
+                   [20480: running -> exited]
+1589238352.507049: Driver <~~ CHANGE (sent at 1589238352.506994)
+                   [20479: running -> exited]
+1589238352.507060: Driver <~~ END (sent at 1589238352.507000)
+                   [expect EOF]
+Short count reading event
+End of test tracker_suite/two_workers_multi_crypto_test
+[PASS] tracker_suite::two_workers_multi_crypto_test: (29.08s)
+polya_worker: no process found
+bin/polya: no process found
+[RUN ] tracker_suite::two_workers_multi_trivial_test
+Running test tracker_suite/two_workers_multi_trivial_test
+                   [expect START]
+Waiting for connection...
+Connected to child: fd = 10
+1589238352.525610: Driver <~~ START (sent at 1589238352.525514)
+                   [expect END]
+1589238352.525851: Driver <~~ CHANGE (sent at 1589238352.525697)
+                   [20492: init -> started]
+1589238352.525885: Driver <~~ CHANGE (sent at 1589238352.525824)
+                   [20493: init -> started]
+1589238352.527140: Driver <~~ CHANGE (sent at 1589238352.527095)
+                   [20492: started -> idle]
+1589238352.527181: Driver <~~ CHANGE (sent at 1589238352.527134)
+                   [20492: idle -> continued]
+1589238352.527190: Driver <~~ CHANGE (sent at 1589238352.527138)
+                   [20492: continued -> running]
+1589238352.527199: Driver <~~ SEND (sent at 1589238352.527140)
+1589238352.527332: Driver <~~ CHANGE (sent at 1589238352.527244)
+                   [20493: started -> idle]
+1589238352.527407: Driver <~~ CHANGE (sent at 1589238352.527318)
+                   [20493: idle -> continued]
+1589238352.527422: Driver <~~ CHANGE (sent at 1589238352.527323)
+                   [20492: running -> stopped]
+1589238352.527437: Driver <~~ RECV (sent at 1589238352.527336)
+1589238352.527445: Driver <~~ CHANGE (sent at 1589238352.527338)
+                   [20492: stopped -> idle]
+1589238352.527458: Driver <~~ CANCEL (sent at 1589238352.527340)
+Worker 20493 being canceled is not solving.
+Event tracker returned an error
+Aborting test tracker_suite/two_workers_multi_trivial_test
+[----] tests/__helper.c:21: Assertion failed: The test driver returned an error (-1)
+[FAIL] tracker_suite::two_workers_multi_trivial_test: (0.00s)
+polya_worker: no process found
+bin/polya: no process found
+[RUN ] tracker_suite::two_workers_one_crypto_test
+Running test tracker_suite/two_workers_one_crypto_test
+                   [expect START]
+Waiting for connection...
+Connected to child: fd = 10
+1589238352.547309: Driver <~~ START (sent at 1589238352.547214)
+                   [expect END]
+1589238352.547420: Driver <~~ CHANGE (sent at 1589238352.547397)
+                   [20503: init -> started]
+1589238352.547564: Driver <~~ CHANGE (sent at 1589238352.547543)
+                   [20504: init -> started]
+1589238352.549273: Driver <~~ CHANGE (sent at 1589238352.549221)
+                   [20503: started -> idle]
+1589238352.549362: Driver <~~ CHANGE (sent at 1589238352.549347)
+                   [20503: idle -> continued]
+1589238352.549393: Driver <~~ CHANGE (sent at 1589238352.549381)
+                   [20503: continued -> running]
+1589238352.549421: Driver <~~ SEND (sent at 1589238352.549409)
+1589238352.549723: Driver <~~ CHANGE (sent at 1589238352.549674)
+                   [20504: started -> idle]
+1589238352.549752: Driver <~~ CHANGE (sent at 1589238352.549693)
+                   [20504: idle -> continued]
+1589238352.549761: Driver <~~ CHANGE (sent at 1589238352.549697)
+                   [20504: continued -> running]
+1589238352.549769: Driver <~~ SEND (sent at 1589238352.549699)
+1589238353.747772: Driver <~~ CHANGE (sent at 1589238353.747735)
+                   [20503: running -> stopped]
+1589238353.747870: Driver <~~ RECV (sent at 1589238353.747860)
+1589238353.747888: Driver <~~ CHANGE (sent at 1589238353.747881)
+                   [20503: stopped -> idle]
+1589238353.747985: Driver <~~ CANCEL (sent at 1589238353.747974)
+1589238353.748251: Driver <~~ CHANGE (sent at 1589238353.748196)
+                   [20504: running -> stopped]
+1589238353.748270: Driver <~~ RECV (sent at 1589238353.748237)
+1589238353.748275: Driver <~~ CHANGE (sent at 1589238353.748239)
+                   [20504: stopped -> idle]
+1589238353.748282: Driver <~~ CHANGE (sent at 1589238353.748246)
+                   [20503: idle -> running]
+1589238353.748288: Driver <~~ CHANGE (sent at 1589238353.748254)
+                   [20504: idle -> running]
+1589238353.748641: Driver <~~ CHANGE (sent at 1589238353.748596)
+                   [20504: running -> exited]
+1589238353.748790: Driver <~~ CHANGE (sent at 1589238353.748711)
+                   [20503: running -> exited]
+1589238353.748824: Driver <~~ END (sent at 1589238353.748739)
+                   [expect EOF]
+Short count reading event
+End of test tracker_suite/two_workers_one_crypto_test
+[PASS] tracker_suite::two_workers_one_crypto_test: (1.20s)
+polya_worker: no process found
+bin/polya: no process found
+[RUN ] tracker_suite::two_workers_one_trivial_test
+Running test tracker_suite/two_workers_one_trivial_test
+                   [expect START]
+Waiting for connection...
+Connected to child: fd = 10
+1589238353.768301: Driver <~~ START (sent at 1589238353.768204)
+                   [expect END]
+1589238353.768446: Driver <~~ CHANGE (sent at 1589238353.768386)
+                   [20514: init -> started]
+1589238353.768544: Driver <~~ CHANGE (sent at 1589238353.768517)
+                   [20515: init -> started]
+1589238353.770060: Driver <~~ CHANGE (sent at 1589238353.769976)
+                   [20514: started -> idle]
+1589238353.770105: Driver <~~ CHANGE (sent at 1589238353.770017)
+                   [20514: idle -> continued]
+1589238353.770116: Driver <~~ CHANGE (sent at 1589238353.770022)
+                   [20514: continued -> running]
+1589238353.770125: Driver <~~ SEND (sent at 1589238353.770024)
+1589238353.770133: Driver <~~ CHANGE (sent at 1589238353.770068)
+                   [20515: started -> idle]
+1589238353.770143: Driver <~~ CHANGE (sent at 1589238353.770079)
+                   [20515: idle -> continued]
+1589238353.770152: Driver <~~ CHANGE (sent at 1589238353.770083)
+                   [20515: continued -> running]
+1589238353.770160: Driver <~~ SEND (sent at 1589238353.770085)
+1589238353.772151: Driver <~~ CHANGE (sent at 1589238353.771960)
+                   [20514: running -> stopped]
+1589238353.772185: Driver <~~ RECV (sent at 1589238353.772000)
+1589238353.772196: Driver <~~ CHANGE (sent at 1589238353.772003)
+                   [20514: stopped -> idle]
+1589238353.772208: Driver <~~ CANCEL (sent at 1589238353.772007)
+1589238353.772216: Driver <~~ CHANGE (sent at 1589238353.772016)
+                   [20515: running -> stopped]
+1589238353.772227: Driver <~~ RECV (sent at 1589238353.772028)
+1589238353.772236: Driver <~~ CHANGE (sent at 1589238353.772031)
+                   [20515: stopped -> idle]
+1589238353.772246: Driver <~~ CHANGE (sent at 1589238353.772041)
+                   [20514: idle -> running]
+1589238353.772256: Driver <~~ CHANGE (sent at 1589238353.772049)
+                   [20515: idle -> running]
+1589238353.772513: Driver <~~ CHANGE (sent at 1589238353.772454)
+                   [20515: running -> exited]
+1589238353.772544: Driver <~~ CHANGE (sent at 1589238353.772473)
+                   [20514: running -> exited]
+1589238353.772555: Driver <~~ END (sent at 1589238353.772483)
+                   [expect EOF]
+Short count reading event
+End of test tracker_suite/two_workers_one_trivial_test
+[PASS] tracker_suite::two_workers_one_trivial_test: (0.01s)
+polya_worker: no process found
+bin/polya: no process found
+[----] Writing xml report in `crit.xml`.
+[====] Synthesis: Tested: 13 | Passing: 10 | Failing: 3 | Crashing: 0 

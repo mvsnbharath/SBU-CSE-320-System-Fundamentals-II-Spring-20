@@ -1,0 +1,15 @@
+--- hw2/dev_repo/basecode/hw2/Makefile
+
++++ hw2/repos/vmeadam/hw2/Makefile
+
+@@ -61,4 +61,4 @@
+
+ 	rm -rf $(BLDD) $(BIND)
+
+ 
+
+ .PRECIOUS: $(BLDD)/*.d
+
+--include $(BLDD)/*.d
+
++-include $(BLDD)/*.d

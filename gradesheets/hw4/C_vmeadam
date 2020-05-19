@@ -1,0 +1,20 @@
+[----] Criterion v2.3.2
+[====] Running 5 tests from worker_suite:
+[RUN ] worker_suite::worker_test_1
+[PASS] worker_suite::worker_test_1: (0.00s)
+bin/polya: no process found
+[RUN ] worker_suite::worker_test_2
+[PASS] worker_suite::worker_test_2: (0.00s)
+polya_worker: no process found
+bin/polya: no process found
+[RUN ] worker_suite::worker_test_3
+[PASS] worker_suite::worker_test_3: (0.00s)
+bin/polya: no process found
+[RUN ] worker_suite::worker_test_4
+[PASS] worker_suite::worker_test_4: (0.00s)
+bin/polya: no process found
+[RUN ] worker_suite::worker_test_5
+[PASS] worker_suite::worker_test_5: (10.82s)
+bin/polya: no process found
+[----] Writing xml report in `crit.xml`.
+[====] Synthesis: Tested: 5 | Passing: 5 | Failing: 0 | Crashing: 0 

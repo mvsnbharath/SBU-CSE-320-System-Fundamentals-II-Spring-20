@@ -1,0 +1,32 @@
+[----] Criterion v2.3.2
+[====] Running 1 test from stress_suite:
+[RUN ] stress_suite::stress_test
+***Starting server...pid = 30721
+Waiting for server to start (i = 0)
+tcp        0      0 0.0.0.0:10000           0.0.0.0:*               LISTEN     
+Running test stress_suite/stress_test
+Forked tester 0 (pid 30727)
+Forked tester 1 (pid 30728)
+Forked tester 2 (pid 30729)
+Forked tester 3 (pid 30730)
+Forked tester 4 (pid 30731)
+Forked tester 5 (pid 30732)
+Forked tester 6 (pid 30733)
+Forked tester 7 (pid 30734)
+Forked tester 8 (pid 30735)
+Forked tester 9 (pid 30736)
+1589823296.420424: [30735] Connected to server localhost:2206
+1589823296.421875: [30736] Connected to server localhost:2718
+1589823296.414660: [30729] Connected to server localhost:64669
+1589823296.414458: [30728] Connected to server localhost:64157
+1589823296.420398: [30733] Connected to server localhost:1694
+1589823296.417533: [30731] Connected to server localhost:670
+1589823296.414232: [30727] Connected to server localhost:63645
+1589823296.418143: [30734] Connected to server localhost:1182
+1589823296.417030: [30732] Connected to server localhost:158
+1589823296.417364: [30730] Connected to server localhost:65181
+Tester pid 30727 terminated with status 0x100
+[----] tests/stress_tests.c:140: Assertion failed: Tester pid 30727 exit status was not 0
+[FAIL] stress_suite::stress_test: (58.99s)
+[----] Writing xml report in `crit.xml`.
+[====] Synthesis: Tested: 1 | Passing: 0 | Failing: 1 | Crashing: 0 
